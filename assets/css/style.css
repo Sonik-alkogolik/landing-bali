@@ -116,7 +116,7 @@
         font-family: Gilroy;
         font-weight: 700;
         font-style: Bold;
-        font-size: 36px;
+        font-size: 28px;
         line-height: 150%;
         letter-spacing: 0%;
     }
@@ -151,6 +151,7 @@
         width: 100%;
         display: flex;
         justify-content: center;
+        overflow: hidden;
     }
     
     .wrapp {
@@ -170,6 +171,10 @@
         }
         p {
             font-size: 12px;
+        }
+        h2 {
+            font-size: 20px;
+            padding-top: 20px;
         }
     }
     

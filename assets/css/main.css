@@ -443,18 +443,19 @@ header {
 }
 
 
-/* ===== about-me ===== */
+/* ===== about-me-me ===== */
 
 .about-me {
     /* height: 704px; */
     height: auto;
-    background: #fafafa;
+    /* background: #fafafa; */
     /* padding-top: 40px; */
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     margin-bottom: 71px;
+    border-top: 2px solid #C5C5C5;
 }
 
 .about-me h2 {
@@ -464,22 +465,23 @@ header {
     line-height: 100%;
     letter-spacing: 0%;
     text-align: left;
+    padding-top: 38px;
 }
 
-.about-content {
+.about-me-content {
     display: flex;
     align-items: flex-start;
     height: 100%;
 }
 
-.about-text {
+.about-me-text {
     width: 100%;
     margin-top: 57px;
     height: 100%;
     flex-direction: column;
 }
 
-.about-text h3 {
+.about-me-text h3 {
     font-family: Gilroy;
     font-weight: 700;
     font-style: Bold;
@@ -490,16 +492,20 @@ header {
     margin-bottom: 20px;
 }
 
-.about-text-title {}
+.about-me-image-mob {
+    display: none;
+}
 
-.about-text-deskription {
+.about-me-text-title {}
+
+.about-me-text-deskription {
     width: 100%;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
 }
 
-.about-text p {
+.about-me-text p {
     /* font-size: 16px;
     color: #403B36;
     line-height: 1.6;
@@ -511,7 +517,8 @@ header {
     padding-bottom: 29px;
 }
 
-/* .about-text p:last-child {
+
+/* .about-me-text p:last-child {
     margin-bottom: 32px;
 } */
 
@@ -530,14 +537,14 @@ header {
     color: #D56E3F;
 }
 
-.about-text-deskription-text {
-    max-width: 588px;
+.about-me-text-deskription-text {
+    max-width: 49%;
     height: 592px;
     border-bottom: 2px solid #C5C5C5
 }
 
-.about-image {
-    max-width: 588px;
+.about-me-image-desktop {
+    max-width: 49%;
     height: 592px;
     overflow: hidden;
     border-radius: 12px;
@@ -545,7 +552,7 @@ header {
     position: relative;
 }
 
-.about-image img {
+.about-me-image-desktop img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -566,10 +573,9 @@ header {
     height: 260px;
     margin: 0 auto;
     box-sizing: border-box;
-
 }
 
-.about-me::after {
+.about-me-me::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -577,10 +583,9 @@ header {
     background-color: #C5C5C5;
 }
 
-.about-me h2 {
+.about-me-me h2 {
     padding-top: 40px;
 }
-
 
 .stats-line {
     display: flex;
@@ -593,7 +598,6 @@ header {
     position: relative;
 }
 
-
 .stats-line__item {
     display: flex;
     flex-direction: column;
@@ -604,7 +608,9 @@ header {
     position: relative;
 }
 
+
 /* ===== Элемент: stats-line__icon ===== */
+
 .stats-line__icon {
     font-size: 48px;
     font-weight: 700;
@@ -622,7 +628,9 @@ header {
     stroke: #FFFFFF;
 }
 
+
 /* ===== Элемент: stats-line__text ===== */
+
 .stats-line__text {
     font-size: 16px;
     color: #FFFFFF;
@@ -631,12 +639,12 @@ header {
     white-space: nowrap;
 }
 
-
 .stats-line__text br {
     display: block;
     content: "";
     margin: 0;
 }
+
 
 /* 
 .stats-line__dot {
@@ -646,7 +654,6 @@ header {
     border-radius: 50%;
     margin-top: 16px;
 } */
-
 
 .stats-line::after {
     content: '';
@@ -661,7 +668,6 @@ header {
     z-index: 2;
 }
 
-
 .stats-line__dot {
     width: 15px;
     height: 15px;
@@ -669,5 +675,5 @@ header {
     border-radius: 50%;
     /* margin-top: 16px; */
     position: relative;
-    z-index: 1; 
+    z-index: 1;
 }
