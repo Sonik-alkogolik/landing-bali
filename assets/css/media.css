@@ -1,5 +1,15 @@
-        /* Адаптивность */
         
+        @media (max-width:1250px) {
+            .about-text-deskription-text {
+                max-width: 49%;
+                width: 100%;
+                height: auto;
+            }
+            .about-image {
+                max-width: 49%;
+                height: auto;
+            }
+        }
         @media (max-width: 992px) {
             .about-me {
                 height: auto;
@@ -19,7 +29,15 @@
             }
             .about-text::after {
                 display: none;
-                /* скрываем линию на мобильных */
+            }
+            .about-text-deskription {
+                flex-direction: column;
+            }
+            .about-text-deskription-text {
+                max-width: 99%;
+            }
+            .about-image {
+                max-width: 99%;
             }
         }
         
