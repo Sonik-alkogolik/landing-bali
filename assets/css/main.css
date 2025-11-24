@@ -1034,33 +1034,357 @@ header {
     font-weight: 500;
 }
 
-/* Адаптивность для .root-projects */
-@media (max-width: 992px) {
-    .root-projects__grid {
-        grid-template-columns: repeat(2, 1fr);
+
+/* ===== news ===== */
+
+.news {
+    padding: 80px 0;
+    background: #fafafa;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.news__title {
+    font-size: 14px;
+    font-weight: 500;
+    color: #302D28;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    position: relative;
+}
+
+.news__title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 60px;
+    height: 2px;
+    background: #2A6B9C;
+}
+
+/* ===== Row 1: Фото + Текст ===== */
+.news__row {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.news__featured {
+    width: 792px;
+    height: 276px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.news__featured-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.news__featured-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 16px;
+}
+
+.news__text-block {
+    width: 309px;
+    padding: 16px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.news__text-block p {
+    font-size: 14px;
+    color: #403B36;
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+
+.news__read-more {
+    display: inline-block;
+    color: #E87A4A;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    transition: color 0.2s ease;
+}
+
+.news__read-more:hover {
+    color: #D56E3F;
+}
+
+/* ===== Row 2: Подписка + Новости ===== */
+.news__row--bottom {
+    display: flex;
+    gap: 24px;
+    align-items: stretch;
+}
+
+.news__subscribe {
+    width: 309px;
+    padding: 16px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.news__subscribe-text {
+    font-size: 14px;
+    color: #403B36;
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+
+.news__subscribe-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.news__subscribe-input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #403B36;
+    outline: none;
+    transition: border 0.2s ease;
+}
+
+.news__subscribe-input:focus {
+    border-color: #2A6B9C;
+}
+
+.news__subscribe-btn {
+    width: 100%;
+    padding: 12px;
+    background: #E87A4A;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.news__subscribe-btn:hover {
+    background: #D56E3F;
+}
+
+.news__latest {
+    width: 792px;
+    height: 276px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.news__latest-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.news__latest-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.news__latest-content h3 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.news__latest-content p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* ===== Адаптивность ===== */
+
+@media (max-width: 1200px) {
+    .news__row,
+    .news__row--bottom {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .news__featured,
+    .news__latest {
+        width: 100%;
+    }
+
+    .news__text-block,
+    .news__subscribe {
+        width: 100%;
     }
 }
 
-@media (max-width: 768px) {
-    .root-projects__grid {
-        grid-template-columns: 1fr;
-    }
 
-    .root-project-card {
-        height: auto;
-    }
 
-    .root-project-card__image-slider {
-        height: 300px;
-    }
+/* ===== testimonials ===== */
 
-    .root-projects__header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 16px;
-    }
+.testimonials {
+    padding: 80px 0;
+    background: #fafafa;
+}
 
-    .root-projects__link {
-        align-self: flex-end;
-    }
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.testimonials__title {
+    font-size: 14px;
+    font-weight: 500;
+    color: #302D28;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+    position: relative;
+    text-align: center;
+}
+
+.testimonials__title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 2px;
+    background: #2A6B9C;
+}
+
+.testimonials__slider {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 32px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    position: relative;
+}
+
+.testimonial-slide {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.testimonial-slide.active {
+    display: block;
+    opacity: 1;
+}
+
+.testimonial-quote {
+    font-size: 16px;
+    color: #403B36;
+    line-height: 1.6;
+    margin-bottom: 24px;
+    font-style: italic;
+    position: relative;
+}
+
+.testimonial-quote::before,
+.testimonial-quote::after {
+    content: '"';
+    font-size: 32px;
+    color: #C56D42;
+    opacity: 0.3;
+    position: absolute;
+}
+
+.testimonial-quote::before {
+    top: -10px;
+    left: -10px;
+}
+
+.testimonial-quote::after {
+    bottom: -20px;
+    right: -10px;
+}
+
+.testimonial-author {
+    font-size: 18px;
+    color: #403B36;
+    font-weight: 500;
+    margin-bottom: 16px;
+    display: block;
+    text-align: right;
+}
+
+.testimonial-signature {
+    text-align: right;
+    margin-top: 16px;
+}
+
+.testimonial-signature svg {
+    width: 80px;
+    height: 30px;
+    stroke: #403B36;
+    stroke-width: 2;
+    stroke-linecap: round;
+}
+
+.testimonials__nav {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 32px;
+}
+
+.testimonial-nav-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #403B36;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 50%;
+    transition: background 0.2s ease;
+}
+
+.testimonial-nav-btn:hover {
+    background: #f5fafd;
 }

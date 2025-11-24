@@ -65,4 +65,82 @@ document.addEventListener('DOMContentLoaded', function() {
         items.classList.remove('show');
         selected.classList.remove('active');
     });
+
+
+    document.addEventListener('DOMContentLoaded', function () {
+        // Найти все слайдеры
+        const sliders = document.querySelectorAll('.project-card__image-slider');
+  
+        sliders.forEach(slider => {
+          const slides = slider.querySelectorAll('.slide');
+          const dots = slider.querySelectorAll('.dot');
+          const prevBtn = slider.querySelector('.slider-btn--prev');
+          const nextBtn = slider.querySelector('.slider-btn--next');
+  
+          let currentIndex = 0;
+  
+          const updateSlider = () => {
+            // Снимаем active со всех
+            slides.forEach(s => s.classList.remove('active'));
+            dots.forEach(d => d.classList.remove('active'));
+  
+            // Ставим active на текущий
+            slides[currentIndex].classList.add('active');
+            dots[currentIndex].classList.add('active');
+          };
+  
+          prevBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+            updateSlider();
+          });
+  
+          nextBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % slides.length;
+            updateSlider();
+          });
+  
+          dots.forEach(dot => {
+            dot.addEventListener('click', () => {
+              currentIndex = parseInt(dot.getAttribute('data-index'));
+              updateSlider();
+            });
+          });
+        });
+
+
+
+        
+document.addEventListener('DOMContentLoaded', function () {
+    const slider = document.querySelector('.testimonials__slider');
+    const slides = slider.querySelectorAll('.testimonial-slide');
+    const prevBtn = document.querySelector('.testimonial-nav-btn--prev');
+    const nextBtn = document.querySelector('.testimonial-nav-btn--next');
+
+    let currentIndex = 0;
+
+    const showSlide = (index) => {
+        slides.forEach(slide => slide.classList.remove('active'));
+        slides[index].classList.add('active');
+    };
+
+    prevBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+        showSlide(currentIndex);
+    });
+
+    nextBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % slides.length;
+        showSlide(currentIndex);
+    });
+});
+
+
+
+
+
+
+      });
+
+
+
 });
