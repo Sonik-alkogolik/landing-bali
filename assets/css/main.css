@@ -677,3 +677,390 @@ header {
     position: relative;
     z-index: 1;
 }
+
+/* ===== Реализованные проекты ===== */
+
+.projects {
+    padding: 80px 0;
+    background: #f5fafd;
+}
+
+.projects__title {
+    font-size: 14px;
+    font-weight: 500;
+    color: #302D28;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+    position: relative;
+}
+
+.projects__title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 60px;
+    height: 2px;
+    background: #2A6B9C;
+}
+
+.projects__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+.project-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.project-card__image {
+    width: 100%;
+    height: 246px;
+    overflow: hidden;
+}
+
+.project-card__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.project-card__content {
+    padding: 16px;
+}
+
+.project-card__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.project-card__name {
+    font-size: 16px;
+    font-weight: 500;
+    color: #403B36;
+}
+
+.project-card__price {
+    font-size: 16px;
+    color: #C56D42;
+    font-weight: 500;
+}
+
+.project-card__description {
+    font-size: 14px;
+    color: #777;
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+
+.project-card__btn {
+    background: #E87A4A;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.project-card__btn:hover {
+    background: #D56E3F;
+}
+
+.projects__footer {
+    text-align: right;
+}
+
+.projects__link {
+    display: inline-block;
+    color: #2A6B9C;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    transition: color 0.2s ease;
+}
+
+.projects__link:hover {
+    color: #1e557a;
+}
+
+/* Адаптивность для .projects */
+@media (max-width: 992px) {
+    .projects__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .projects__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card__image {
+        height: 200px;
+    }
+
+    .projects__footer {
+        text-align: center;
+    }
+}
+
+
+
+/* ===== Проекты ROOT BALI ===== */
+
+.root-projects {
+    padding: 80px 0;
+    background: #fff;
+    flex-direction: column;
+}
+
+.root-projects__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.root-projects__title {
+    font-size: 14px;
+    font-weight: 500;
+    color: #302D28;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.root-projects__title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 60px;
+    height: 2px;
+    background: #2A6B9C;
+}
+
+.root-projects__link {
+    color: #E87A4A;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    transition: color 0.2s ease;
+}
+
+.root-projects__link:hover {
+    color: #D56E3F;
+}
+
+.root-projects__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+/* Карточка с фиксированной высотой */
+.root-project-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    height: 596px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.root-project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* Слайдер */
+.root-project-card__image-slider {
+    position: relative;
+    width: 100%;
+    height: 495px;
+    overflow: hidden;
+}
+
+.root-slider-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.4s ease;
+}
+
+.root-slide {
+    min-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.root-slide.active {
+    opacity: 1;
+}
+
+.root-slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255,255,255,0.7);
+    border: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    font-size: 20px;
+    color: #403B36;
+    cursor: pointer;
+    z-index: 5;
+    transition: background 0.2s ease;
+}
+
+.root-slider-btn:hover {
+    background: white;
+}
+
+.root-slider-btn--prev {
+    left: 12px;
+}
+
+.root-slider-btn--next {
+    right: 12px;
+}
+
+.root-slider-dots {
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+    z-index: 5;
+}
+
+.root-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.7);
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.root-dot.active {
+    background: white;
+}
+
+.root-project-card__tag {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: rgba(255,255,255,0.85);
+    color: #403B36;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px 8px;
+    border-radius: 20px;
+    backdrop-filter: blur(4px);
+    z-index: 10;
+    width: 87px;
+    height: 29px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.root-project-card:hover .root-project-card__tag {
+    background: white;
+}
+
+/* Контент */
+.root-project-card__content {
+    padding: 16px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.root-project-card__name {
+    font-size: 18px;
+    font-weight: 500;
+    color: #403B36;
+    margin-bottom: 8px;
+    word-break: break-word;
+}
+
+.root-project-card__description {
+    font-size: 14px;
+    color: #777;
+    line-height: 1.5;
+    margin-bottom: 12px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 46px;
+}
+
+.root-project-card__price {
+    font-size: 16px;
+    color: #C56D42;
+    font-weight: 500;
+}
+
+/* Адаптивность для .root-projects */
+@media (max-width: 992px) {
+    .root-projects__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .root-projects__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .root-project-card {
+        height: auto;
+    }
+
+    .root-project-card__image-slider {
+        height: 300px;
+    }
+
+    .root-projects__header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .root-projects__link {
+        align-self: flex-end;
+    }
+}
