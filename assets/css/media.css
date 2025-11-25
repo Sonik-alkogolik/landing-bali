@@ -139,6 +139,7 @@
     }
 }
             
+
             @media(max-width:680px) {
                 .menu-top {
                     display: none;
@@ -237,3 +238,97 @@
 
 
 
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .testimonials {
+        padding: 60px 20px;
+    }
+
+    .testimonials__slider {
+        padding: 24px;
+        max-width: 100%;
+    }
+
+    .testimonial-quote {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .testimonial-author {
+        font-size: 16px;
+    }
+
+    .testimonials__nav {
+        gap: 12px;
+    }
+}
+
+
+      /* Адаптивность */
+      @media (max-width: 992px) {
+        .faq__content {
+          flex-direction: column;
+          gap: 24px;
+        }
+  
+        .faq__categories {
+          width: 100%;
+        }
+  
+        .faq__contact-form {
+          flex-direction: column;
+          gap: 16px;
+        }
+  
+        .faq__contact-right {
+          width: 100%;
+        }
+      }
+  
+      @media (max-width: 768px) {
+        .faq {
+          padding: 60px 20px;
+        }
+      }
+
+
+/* ===== Адаптивность ===== */
+
+@media (max-width: 992px) {
+    .consultation__options {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .consultation-option {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .consultation {
+        padding: 60px 20px;
+    }
+
+    .consultation__title {
+        font-size: 20px;
+    }
+
+    .consultation__description,
+    .consultation__note {
+        font-size: 14px;
+    }
+
+    .consultation-option__title {
+        font-size: 18px;
+    }
+
+    .consultation-option__amount {
+        font-size: 20px;
+    }
+
+    .consultation-option__benefits li {
+        font-size: 14px;
+    }
+}

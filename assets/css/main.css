@@ -227,7 +227,7 @@ header {
     flex-direction: column;
     max-width: 642px;
     width: 100%;
-    padding-top: 148px;
+    padding-top: 156px;
 }
 
 .intro p {
@@ -454,7 +454,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    margin-bottom: 71px;
+    margin-bottom: 70px;
     border-top: 2px solid #C5C5C5;
 }
 
@@ -465,7 +465,7 @@ header {
     line-height: 100%;
     letter-spacing: 0%;
     text-align: left;
-    padding-top: 38px;
+    padding-top: 45px;
 }
 
 .about-me-content {
@@ -684,7 +684,18 @@ header {
     padding: 80px 0;
     background: #f5fafd;
 }
+.project-title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
 
+
+.projects h2 {
+    text-align: left;
+    padding-bottom: 72px;
+}
+/* 
 .projects__title {
     font-size: 14px;
     font-weight: 500;
@@ -693,7 +704,7 @@ header {
     text-transform: uppercase;
     margin-bottom: 32px;
     position: relative;
-}
+} */
 
 .projects__title::after {
     content: '';
@@ -714,7 +725,6 @@ header {
 
 .project-card {
     background: white;
-    border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 12px rgba(0,0,0,0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -1040,12 +1050,7 @@ header {
 .news {
     padding: 80px 0;
     background: #fafafa;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+    flex-direction: column;
 }
 
 .news__title {
@@ -1268,11 +1273,6 @@ header {
     background: #fafafa;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
 
 .testimonials__title {
     font-size: 14px;
@@ -1388,3 +1388,382 @@ header {
 .testimonial-nav-btn:hover {
     background: #f5fafd;
 }
+
+    /* ===== FAQ ===== */
+    .faq {
+        padding: 80px 0;
+        background: #403B36;
+        flex-direction: column;
+      }
+  
+      .faq__title {
+        font-size: 14px;
+        font-weight: 500;
+        color: #302D28;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin-bottom: 32px;
+        position: relative;
+      }
+  
+      .faq__title::after {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        width: 60px;
+        height: 2px;
+        background: #2A6B9C;
+      }
+  
+      .faq__content {
+        display: flex;
+        gap: 40px;
+        margin-bottom: 40px;
+        position: relative;
+      }
+  
+      /* Фон с оверлеем */
+      .faq__content::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80') no-repeat center center;
+        background-size: cover;
+        opacity: 0.7;
+        z-index: -1;
+      }
+  
+      /* Категории */
+      .faq__categories {
+        flex-shrink: 0;
+        width: 200px;
+      }
+  
+      .faq-category {
+        display: block;
+        width: 100%;
+        padding: 12px 16px;
+        background: rgba(255,255,255,0.95);
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        text-align: left;
+        font-size: 16px;
+        color: #403B36;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        margin-bottom: 8px;
+      }
+  
+      .faq-category.active {
+        background: #2A6B9C;
+        color: white;
+        border-color: #2A6B9C;
+      }
+  
+      .faq-category:hover:not(.active) {
+        background: rgba(255,255,255,1);
+        border-color: #2A6B9C;
+      }
+      .faq-question__toggle-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 24px;
+        height: 24px;
+        font-size: 20px;
+        color: #403B36;
+        transition: transform 0.3s ease;
+        user-select: none;
+    }
+    
+    /* Когда вопрос открыт — иконка поворачивается */
+    .faq-question.open .faq-question__toggle-icon {
+        transform: rotate(45deg);
+    }
+    .faq__questions {
+        width: 100%;
+    }
+   /* Контейнер вопроса — относительный */
+.faq-question {
+    background: rgba(255,255,255,0.95);
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    overflow: visible; /* важно! не hidden */
+    display: none;
+    position: relative; /* для позиционирования ответа */
+    min-height: 56px; /* высота заголовка */
+}
+
+.faq-question.show {
+    display: block;
+}
+
+/* Заголовок — фиксированная высота */
+.faq-question__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background: rgba(255,255,255,0.9);
+    cursor: pointer;
+    font-size: 16px;
+    color: #403B36;
+}
+
+/* Ответ — позиционируется абсолютно под заголовком */
+.faq-question__answer {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding: 0 16px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+    font-size: 14px;
+    color: #777;
+    line-height: 1.6;
+    background: rgba(255,255,255,0.95);
+    border-top: 1px solid #eee;
+    z-index: 10;
+}
+
+/* Когда открыт — задаём max-height */
+.faq-question__answer.show {
+    padding: 16px;
+    max-height: 500px;
+}
+      /* Форма обратной связи */
+      .faq__contact {
+        padding: 24px;
+        background: rgba(255,255,255,0.95);
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        margin-top: 40px;
+      }
+  
+      .faq__contact-title {
+        font-size: 18px;
+        font-weight: 500;
+        color: #403B36;
+        margin-bottom: 24px;
+        text-align: center;
+      }
+  
+      .faq__contact-form {
+        display: flex;
+        gap: 24px;
+        align-items: flex-start;
+      }
+  
+      .faq__contact-textarea {
+        flex-grow: 1;
+        padding: 16px;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        font-size: 14px;
+        color: #403B36;
+        outline: none;
+        resize: vertical;
+        transition: border 0.2s ease;
+      }
+  
+      .faq__contact-textarea:focus {
+        border-color: #2A6B9C;
+      }
+  
+      .faq__contact-right {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        width: 300px;
+      }
+      
+      .faq__contact-input {
+        width: 100%;
+        padding: 12px 16px;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        font-size: 14px;
+        color: #403B36;
+        outline: none;
+        transition: border 0.2s ease;
+      }
+  
+      .faq__contact-input:focus {
+        border-color: #2A6B9C;
+      }
+  
+      .faq__contact-btn {
+        width: 100%;
+        padding: 12px;
+        background: #E87A4A;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        font-size: 14px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: background 0.2s ease;
+      }
+  
+      .faq__contact-btn:hover {
+        background: #D56E3F;
+      }
+  
+
+
+      /* ===== consultation ===== */
+
+.consultation {
+    padding: 80px 0;
+    background: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.consultation__title {
+    font-size: 24px;
+    font-weight: 500;
+    color: #403B36;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.consultation__description,
+.consultation__note {
+    font-size: 16px;
+    color: #777;
+    line-height: 1.6;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.consultation__options {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.consultation-option {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    padding: 24px;
+    width: 100%;
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.consultation-option:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.consultation-option__title {
+    font-size: 20px;
+    font-weight: 500;
+    color: #2A6B9C;
+    margin-bottom: 16px;
+}
+
+.consultation-option__info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.consultation-option__format,
+.consultation-option__duration {
+    font-size: 14px;
+    color: #777;
+}
+
+.consultation-option__price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.consultation-option__label {
+    font-size: 14px;
+    color: #777;
+}
+
+.consultation-option__amount {
+    font-size: 24px;
+    font-weight: 500;
+    color: #C56D42;
+}
+
+.consultation-option__btn {
+    width: 100%;
+    padding: 12px;
+    background: #E87A4A;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    margin-bottom: 16px;
+}
+
+.consultation-option__btn:hover {
+    background: #D56E3F;
+}
+
+.consultation-option__benefits {
+    font-size: 14px;
+    color: #777;
+    line-height: 1.5;
+}
+
+.consultation-option__benefits h4 {
+    font-size: 16px;
+    color: #403B36;
+    margin-bottom: 8px;
+}
+
+.consultation-option__benefits ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.consultation-option__benefits li {
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 8px;
+}
+
+.consultation-option__benefits li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #2A6B9C;
+    font-weight: bold;
+}
+
+.consultation__footer {
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+    line-height: 1.6;
+}
+
