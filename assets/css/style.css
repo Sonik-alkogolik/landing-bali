@@ -110,8 +110,6 @@
         line-height: 100%;
         letter-spacing: 0%;
         text-align: center;
-        text-transform: uppercase;
-        
     }
     
     h3 {
@@ -162,14 +160,17 @@
         max-width: 1200px;
         width: 100%;
     }
-    .watch_all {font-family: Gilroy;
+    
+    .watch_all {
+        font-family: Gilroy;
         font-weight: 500;
         font-style: Medium;
         font-size: 20px;
         line-height: 100%;
         letter-spacing: 0%;
         border-bottom: 2px solid #E17946
-        }
+    }
+    
     @media(max-width:1080px) {
         .container {
             padding: 0 20px;

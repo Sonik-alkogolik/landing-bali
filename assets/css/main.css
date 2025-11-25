@@ -211,11 +211,12 @@ header {
     background-size: cover;
     /* margin-top: 62px; */
     margin-top: 69px;
+    overflow: visible;
 }
 
 .intro {
     width: 100%;
-    height: 729px;
+    height: 733px;
     display: flex;
     justify-content: center;
     position: relative;
@@ -225,7 +226,7 @@ header {
     display: flex;
     align-items: center;
     flex-direction: column;
-    max-width: 642px;
+    max-width: 755px;
     width: 100%;
     padding-top: 156px;
 }
@@ -465,7 +466,7 @@ header {
     line-height: 100%;
     letter-spacing: 0%;
     text-align: left;
-    padding-top: 45px;
+    padding-top: 39px;
 }
 
 .about-me-content {
@@ -476,7 +477,7 @@ header {
 
 .about-me-text {
     width: 100%;
-    margin-top: 57px;
+    margin-top: 50px;
     height: 100%;
     flex-direction: column;
 }
@@ -503,6 +504,8 @@ header {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    padding-left: 5px;
+    padding-top: 5px;
 }
 
 .about-me-text p {
@@ -525,7 +528,7 @@ header {
 .read-more {
     display: inline-block;
     color: #E87A4A;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 500;
     text-decoration: underline;
     text-underline-offset: 4px;
@@ -563,11 +566,8 @@ header {
 /* ===== Вертикальная пунктирная линия через ::after ===== */
 
 .section-stats-line {
-    width: 100%;
     background: #1E4A5F;
     padding: 40px 0;
-    display: flex;
-    justify-content: center;
     align-items: center;
     width: 100%;
     height: 260px;
@@ -606,6 +606,10 @@ header {
     /* gap: 12px; */
     text-align: center;
     position: relative;
+}
+
+.stats-line__item img {
+    height: 149px;
 }
 
 
@@ -678,23 +682,29 @@ header {
     z-index: 1;
 }
 
+
 /* ===== Реализованные проекты ===== */
 
 .projects {
-    padding: 80px 0;
-    background: #f5fafd;
+    border-top: 2px solid #C5C5C5;
+    margin-top: 80px;
+    padding-bottom: 55px;
+    border-bottom: 2px solid #C5C5C5;
 }
+
 .project-title {
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
-
 .projects h2 {
     text-align: left;
-    padding-bottom: 72px;
+    /* padding-bottom: 85px; */
+    padding-top: 40px;
 }
+
+
 /* 
 .projects__title {
     font-size: 14px;
@@ -724,20 +734,18 @@ header {
 }
 
 .project-card {
-    background: white;
     overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); */
 }
 
 .project-card__image {
     width: 100%;
-    height: 246px;
+    height: 252px;
     overflow: hidden;
 }
 
@@ -749,7 +757,10 @@ header {
 }
 
 .project-card__content {
-    padding: 16px;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .project-card__header {
@@ -760,34 +771,50 @@ header {
 }
 
 .project-card__name {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     color: #403B36;
 }
 
 .project-card__price {
-    font-size: 16px;
-    color: #C56D42;
-    font-weight: 500;
+    font-family: Gilroy;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 20px;
+    color: #403B36;
+    line-height: 140%;
+    letter-spacing: 0%;
 }
 
 .project-card__description {
-    font-size: 14px;
-    color: #777;
-    line-height: 1.5;
+    color: #0000006E;
     margin-bottom: 16px;
+    text-align: left;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    max-width: 322px;
+    width: 100%;
+    padding: 0px;
 }
 
 .project-card__btn {
-    background: #E87A4A;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    padding: 6px 12px;
-    font-size: 12px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: background 0.2s ease;
+    max-width: 87px;
+    width: 100%;
+    height: 29px;
+    border-radius: 23px;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 11px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+    background-color: #B3B3B3;
+    position: absolute;
+    top: 8px;
+    right: 0px;
 }
 
 .project-card__btn:hover {
@@ -799,20 +826,25 @@ header {
 }
 
 .projects__link {
-    display: inline-block;
+    /* display: inline-block;
     color: #2A6B9C;
     font-size: 16px;
     font-weight: 500;
     text-decoration: underline;
     text-underline-offset: 4px;
-    transition: color 0.2s ease;
+    transition: color 0.2s ease; */
+    padding-top: 46px;
+    padding-right: 13px;
+    padding-bottom: 65px;
 }
 
 .projects__link:hover {
     color: #1e557a;
 }
 
+
 /* Адаптивность для .projects */
+
 @media (max-width: 992px) {
     .projects__grid {
         grid-template-columns: repeat(2, 1fr);
@@ -823,16 +855,13 @@ header {
     .projects__grid {
         grid-template-columns: 1fr;
     }
-
     .project-card__image {
         height: 200px;
     }
-
     .projects__footer {
         text-align: center;
     }
 }
-
 
 
 /* ===== Проекты ROOT BALI ===== */
@@ -888,12 +917,14 @@ header {
     gap: 24px;
 }
 
+
 /* Карточка с фиксированной высотой */
+
 .root-project-card {
     background: white;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     height: 596px;
     display: flex;
     flex-direction: column;
@@ -902,10 +933,12 @@ header {
 
 .root-project-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
+
 /* Слайдер */
+
 .root-project-card__image-slider {
     position: relative;
     width: 100%;
@@ -937,7 +970,7 @@ header {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(255,255,255,0.7);
+    background: rgba(255, 255, 255, 0.7);
     border: none;
     border-radius: 50%;
     width: 36px;
@@ -975,7 +1008,7 @@ header {
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background: rgba(255,255,255,0.7);
+    background: rgba(255, 255, 255, 0.7);
     cursor: pointer;
     transition: background 0.2s ease;
 }
@@ -988,7 +1021,7 @@ header {
     position: absolute;
     top: 12px;
     right: 12px;
-    background: rgba(255,255,255,0.85);
+    background: rgba(255, 255, 255, 0.85);
     color: #403B36;
     font-size: 12px;
     font-weight: 500;
@@ -1008,7 +1041,9 @@ header {
     background: white;
 }
 
+
 /* Контент */
+
 .root-project-card__content {
     padding: 16px;
     flex-grow: 1;
@@ -1073,7 +1108,9 @@ header {
     background: #2A6B9C;
 }
 
+
 /* ===== Row 1: Фото + Текст ===== */
+
 .news__row {
     display: flex;
     gap: 24px;
@@ -1086,7 +1123,7 @@ header {
     position: relative;
     overflow: hidden;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .news__featured-image {
@@ -1101,7 +1138,7 @@ header {
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0, 0, 0, 0.5);
     color: white;
     font-size: 16px;
     font-weight: 500;
@@ -1113,7 +1150,7 @@ header {
     padding: 16px;
     background: white;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1140,7 +1177,9 @@ header {
     color: #D56E3F;
 }
 
+
 /* ===== Row 2: Подписка + Новости ===== */
+
 .news__row--bottom {
     display: flex;
     gap: 24px;
@@ -1152,7 +1191,7 @@ header {
     padding: 16px;
     background: white;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1209,7 +1248,7 @@ header {
     position: relative;
     overflow: hidden;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .news__latest-image {
@@ -1224,7 +1263,7 @@ header {
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0, 0, 0, 0.5);
     color: white;
     padding: 16px;
     display: flex;
@@ -1244,6 +1283,7 @@ header {
     margin: 0;
 }
 
+
 /* ===== Адаптивность ===== */
 
 @media (max-width: 1200px) {
@@ -1252,18 +1292,15 @@ header {
         flex-direction: column;
         gap: 24px;
     }
-
     .news__featured,
     .news__latest {
         width: 100%;
     }
-
     .news__text-block,
     .news__subscribe {
         width: 100%;
     }
 }
-
 
 
 /* ===== testimonials ===== */
@@ -1272,7 +1309,6 @@ header {
     padding: 80px 0;
     background: #fafafa;
 }
-
 
 .testimonials__title {
     font-size: 14px;
@@ -1302,7 +1338,7 @@ header {
     padding: 32px;
     background: white;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     position: relative;
 }
 
@@ -1389,133 +1425,153 @@ header {
     background: #f5fafd;
 }
 
-    /* ===== FAQ ===== */
-    .faq {
-        padding: 80px 0;
-        background: #403B36;
-        flex-direction: column;
-      }
-  
-      .faq__title {
-        font-size: 14px;
-        font-weight: 500;
-        color: #302D28;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-        margin-bottom: 32px;
-        position: relative;
-      }
-  
-      .faq__title::after {
-        content: '';
-        position: absolute;
-        bottom: -10px;
-        left: 0;
-        width: 60px;
-        height: 2px;
-        background: #2A6B9C;
-      }
-  
-      .faq__content {
-        display: flex;
-        gap: 40px;
-        margin-bottom: 40px;
-        position: relative;
-      }
-  
-      /* Фон с оверлеем */
-      .faq__content::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80') no-repeat center center;
-        background-size: cover;
-        opacity: 0.7;
-        z-index: -1;
-      }
-  
-      /* Категории */
-      .faq__categories {
-        flex-shrink: 0;
-        width: 200px;
-      }
-  
-      .faq-category {
-        display: block;
-        width: 100%;
-        padding: 12px 16px;
-        background: rgba(255,255,255,0.95);
-        border: 1px solid #ddd;
-        border-radius: 6px;
-        text-align: left;
-        font-size: 16px;
-        color: #403B36;
-        cursor: pointer;
-        transition: all 0.2s ease;
-        margin-bottom: 8px;
-      }
-  
-      .faq-category.active {
-        background: #2A6B9C;
-        color: white;
-        border-color: #2A6B9C;
-      }
-  
-      .faq-category:hover:not(.active) {
-        background: rgba(255,255,255,1);
-        border-color: #2A6B9C;
-      }
-      .faq-question__toggle-icon {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 24px;
-        height: 24px;
-        font-size: 20px;
-        color: #403B36;
-        transition: transform 0.3s ease;
-        user-select: none;
-    }
-    
-    /* Когда вопрос открыт — иконка поворачивается */
-    .faq-question.open .faq-question__toggle-icon {
-        transform: rotate(45deg);
-    }
-    .faq__questions {
-        width: 100%;
-    }
-   /* Контейнер вопроса — относительный */
+
+/* ===== FAQ ===== */
+
+.faq {
+    padding: 80px 0;
+    background: #403B36;
+    flex-direction: column;
+}
+
+.faq__title {
+    font-size: 14px;
+    font-weight: 500;
+    color: #302D28;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+    position: relative;
+}
+
+.faq__title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 60px;
+    height: 2px;
+    background: #2A6B9C;
+}
+
+.faq__content {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+
+/* Фон с оверлеем */
+
+.faq__content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80') no-repeat center center;
+    background-size: cover;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+
+/* Категории */
+
+.faq__categories {
+    flex-shrink: 0;
+    width: 200px;
+}
+
+.faq-category {
+    display: block;
+    width: 100%;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    text-align: left;
+    font-size: 16px;
+    color: #403B36;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-bottom: 8px;
+}
+
+.faq-category.active {
+    background: #2A6B9C;
+    color: white;
+    border-color: #2A6B9C;
+}
+
+.faq-category:hover:not(.active) {
+    background: rgba(255, 255, 255, 1);
+    border-color: #2A6B9C;
+}
+
+.faq-question__toggle-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    font-size: 20px;
+    color: #403B36;
+    transition: transform 0.3s ease;
+    user-select: none;
+}
+
+
+/* Когда вопрос открыт — иконка поворачивается */
+
+.faq-question.open .faq-question__toggle-icon {
+    transform: rotate(45deg);
+}
+
+.faq__questions {
+    width: 100%;
+}
+
+
+/* Контейнер вопроса — относительный */
+
 .faq-question {
-    background: rgba(255,255,255,0.95);
+    background: rgba(255, 255, 255, 0.95);
     border: 1px solid #ddd;
     border-radius: 6px;
     margin-bottom: 16px;
-    overflow: visible; /* важно! не hidden */
+    overflow: visible;
+    /* важно! не hidden */
     display: none;
-    position: relative; /* для позиционирования ответа */
-    min-height: 56px; /* высота заголовка */
+    position: relative;
+    /* для позиционирования ответа */
+    min-height: 56px;
+    /* высота заголовка */
 }
 
 .faq-question.show {
     display: block;
 }
 
+
 /* Заголовок — фиксированная высота */
+
 .faq-question__header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 16px;
-    background: rgba(255,255,255,0.9);
+    background: rgba(255, 255, 255, 0.9);
     cursor: pointer;
     font-size: 16px;
     color: #403B36;
 }
 
+
 /* Ответ — позиционируется абсолютно под заголовком */
+
 .faq-question__answer {
     position: absolute;
     top: 100%;
@@ -1528,107 +1584,106 @@ header {
     font-size: 14px;
     color: #777;
     line-height: 1.6;
-    background: rgba(255,255,255,0.95);
+    background: rgba(255, 255, 255, 0.95);
     border-top: 1px solid #eee;
     z-index: 10;
 }
 
+
 /* Когда открыт — задаём max-height */
+
 .faq-question__answer.show {
     padding: 16px;
     max-height: 500px;
 }
-      /* Форма обратной связи */
-      .faq__contact {
-        padding: 24px;
-        background: rgba(255,255,255,0.95);
-        border-radius: 12px;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-        margin-top: 40px;
-      }
-  
-      .faq__contact-title {
-        font-size: 18px;
-        font-weight: 500;
-        color: #403B36;
-        margin-bottom: 24px;
-        text-align: center;
-      }
-  
-      .faq__contact-form {
-        display: flex;
-        gap: 24px;
-        align-items: flex-start;
-      }
-  
-      .faq__contact-textarea {
-        flex-grow: 1;
-        padding: 16px;
-        border: 1px solid #ddd;
-        border-radius: 6px;
-        font-size: 14px;
-        color: #403B36;
-        outline: none;
-        resize: vertical;
-        transition: border 0.2s ease;
-      }
-  
-      .faq__contact-textarea:focus {
-        border-color: #2A6B9C;
-      }
-  
-      .faq__contact-right {
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-        width: 300px;
-      }
-      
-      .faq__contact-input {
-        width: 100%;
-        padding: 12px 16px;
-        border: 1px solid #ddd;
-        border-radius: 6px;
-        font-size: 14px;
-        color: #403B36;
-        outline: none;
-        transition: border 0.2s ease;
-      }
-  
-      .faq__contact-input:focus {
-        border-color: #2A6B9C;
-      }
-  
-      .faq__contact-btn {
-        width: 100%;
-        padding: 12px;
-        background: #E87A4A;
-        color: white;
-        border: none;
-        border-radius: 6px;
-        font-size: 14px;
-        font-weight: 500;
-        cursor: pointer;
-        transition: background 0.2s ease;
-      }
-  
-      .faq__contact-btn:hover {
-        background: #D56E3F;
-      }
-  
 
 
-      /* ===== consultation ===== */
+/* Форма обратной связи */
+
+.faq__contact {
+    padding: 24px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    margin-top: 40px;
+}
+
+.faq__contact-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #403B36;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.faq__contact-form {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+}
+
+.faq__contact-textarea {
+    flex-grow: 1;
+    padding: 16px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #403B36;
+    outline: none;
+    resize: vertical;
+    transition: border 0.2s ease;
+}
+
+.faq__contact-textarea:focus {
+    border-color: #2A6B9C;
+}
+
+.faq__contact-right {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 300px;
+}
+
+.faq__contact-input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #403B36;
+    outline: none;
+    transition: border 0.2s ease;
+}
+
+.faq__contact-input:focus {
+    border-color: #2A6B9C;
+}
+
+.faq__contact-btn {
+    width: 100%;
+    padding: 12px;
+    background: #E87A4A;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.faq__contact-btn:hover {
+    background: #D56E3F;
+}
+
+
+/* ===== consultation ===== */
 
 .consultation {
     padding: 80px 0;
     background: #fff;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+    flex-direction: column;
 }
 
 .consultation__title {
@@ -1658,7 +1713,7 @@ header {
 .consultation-option {
     background: white;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     padding: 24px;
     width: 100%;
     max-width: 360px;
@@ -1669,7 +1724,7 @@ header {
 
 .consultation-option:hover {
     transform: translateY(-4px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 .consultation-option__title {
@@ -1766,4 +1821,3 @@ header {
     color: #777;
     line-height: 1.6;
 }
-
