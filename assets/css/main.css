@@ -256,6 +256,7 @@ header {
     color: #FFFFFF;
     line-height: 100%;
     letter-spacing: 0%;
+    padding-top: 0px;
 }
 
 .intro span {
@@ -537,7 +538,7 @@ header {
 }
 
 .read-more:hover {
-    color: #D56E3F;
+    color: #1e557a;
 }
 
 .about-me-text-deskription-text {
@@ -688,7 +689,7 @@ header {
 .projects {
     border-top: 2px solid #C5C5C5;
     margin-top: 80px;
-    padding-bottom: 55px;
+    padding-bottom: 50px;
     border-bottom: 2px solid #C5C5C5;
 }
 
@@ -867,26 +868,27 @@ header {
 /* ===== Проекты ROOT BALI ===== */
 
 .root-projects {
-    padding: 80px 0;
-    background: #fff;
+    /* padding: 80px 0; */
+    /* background: #fff; */
     flex-direction: column;
 }
 
 .root-projects__header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-bottom: 24px;
+    align-items: flex-start;
+    font-size: 20px;
+    padding-top: 35px;
 }
 
-.root-projects__title {
+/* .root-projects__title {
     font-size: 14px;
     font-weight: 500;
     color: #302D28;
     letter-spacing: 2px;
     text-transform: uppercase;
     position: relative;
-}
+} */
 
 .root-projects__title::after {
     content: '';
@@ -899,17 +901,14 @@ header {
 }
 
 .root-projects__link {
-    color: #E87A4A;
-    font-size: 16px;
-    font-weight: 500;
-    text-decoration: underline;
-    text-underline-offset: 4px;
-    transition: color 0.2s ease;
+    padding-right: 14px;
+    padding-bottom: 74px;
+
 }
 
-.root-projects__link:hover {
+/* .root-projects__link:hover {
     color: #D56E3F;
-}
+} */
 
 .root-projects__grid {
     display: grid;
@@ -921,14 +920,12 @@ header {
 /* Карточка с фиксированной высотой */
 
 .root-project-card {
-    background: white;
-    border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    height: 596px;
+    height: auto;
     display: flex;
     flex-direction: column;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
 }
 
 .root-project-card:hover {
@@ -1019,8 +1016,8 @@ header {
 
 .root-project-card__tag {
     position: absolute;
-    top: 12px;
-    right: 12px;
+    top: 20px;
+    right: 15px;
     background: rgba(255, 255, 255, 0.85);
     color: #403B36;
     font-size: 12px;
@@ -1050,52 +1047,66 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding-left: 0px;
 }
 
+
 .root-project-card__name {
-    font-size: 18px;
     font-weight: 500;
-    color: #403B36;
-    margin-bottom: 8px;
-    word-break: break-word;
+    font-style: Medium;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    position: absolute;
+    color: #F5F5F5;
+    bottom: 160px;
+    left: 22px;
 }
 
 .root-project-card__description {
-    font-size: 14px;
-    color: #777;
-    line-height: 1.5;
-    margin-bottom: 12px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
     display: -webkit-box;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 2; 
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
-    height: 46px;
-}
+    text-align: left;
+    padding-left:10px;
+  }
 
 .root-project-card__price {
     font-size: 16px;
-    color: #C56D42;
-    font-weight: 500;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    padding-top:10px;
+    padding-left: 10px;
 }
 
 
 /* ===== news ===== */
 
 .news {
-    padding: 80px 0;
-    background: #fafafa;
     flex-direction: column;
+    border-top: 2px solid #C5C5C5;
+    margin-top: 70px;
 }
 
 .news__title {
-    font-size: 14px;
+    /* font-size: 14px;
     font-weight: 500;
     color: #302D28;
     letter-spacing: 2px;
     text-transform: uppercase;
     margin-bottom: 24px;
-    position: relative;
+    position: relative; */
+    margin-bottom: 70px;
+    padding-top: 42px;
 }
 
 .news__title::after {
@@ -1113,7 +1124,8 @@ header {
 
 .news__row {
     display: flex;
-    gap: 24px;
+    margin-bottom: 24px;
+    justify-content: space-between;
     margin-bottom: 24px;
 }
 
@@ -1135,32 +1147,49 @@ header {
 
 .news__featured-caption {
     position: absolute;
-    bottom: 0;
-    left: 0;
+    bottom: 18px;
+    left: 8px;
     right: 0;
-    background: rgba(0, 0, 0, 0.5);
+    /* background: rgba(0, 0, 0, 0.5); */
     color: white;
-    font-size: 16px;
-    font-weight: 500;
     padding: 12px 16px;
+font-weight: 500;
+font-style: Medium;
+font-size: 20px;
+line-height: 100%;
+letter-spacing: 0%;
+
 }
 
 .news__text-block {
-    width: 309px;
-    padding: 16px;
-    background: white;
+    max-width: 384px;
+    width: 100%;
+    background:#E7E7E7CC;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 24px 26px;
 }
 
 .news__text-block p {
-    font-size: 14px;
+    font-weight: 300;
+    font-style: Light;
+    font-size: 15px;
+    line-height: 133%;
+    letter-spacing: 0%;
     color: #403B36;
-    line-height: 1.5;
-    margin-bottom: 16px;
+    text-align: left;
+}
+
+.news__text-block h3 {
+    font-weight: 300;
+    font-style: Light;
+    font-size: 15px;
+    line-height: 133%;
+    letter-spacing: 0%;
+    color: #403B36;
+    text-align: left;
 }
 
 .news__read-more {
@@ -1191,7 +1220,7 @@ header {
     padding: 16px;
     background: white;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1263,18 +1292,16 @@ header {
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
+    /* background: rgba(0, 0, 0, 0.5);
+    color: white; */
     padding: 16px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 .news__latest-content h3 {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 500;
-    margin-bottom: 8px;
+    /* margin-bottom: 8px; */
 }
 
 .news__latest-content p {
@@ -1820,4 +1847,671 @@ header {
     font-size: 14px;
     color: #777;
     line-height: 1.6;
+}
+
+/* ===== about-bali ===== */
+
+.about-bali {
+    padding: 80px 0;
+    background: #f5fafd; /* светло-голубой фон */
+}
+
+.about-bali__title {
+    font-size: 14px;
+    font-weight: 500;
+    color: #302D28;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    position: relative;
+}
+
+
+.about-bali__content {
+    font-size: 16px;
+    color: #403B36;
+    line-height: 1.6;
+    max-width: 1130px; /* как в макете */
+    margin: 0 auto;
+    padding: 24px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    min-height: 144px; /* как в макете */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .about-bali {
+        padding: 60px 20px;
+    }
+
+    .about-bali__content {
+        max-width: 100%;
+        padding: 20px;
+        min-height: auto;
+        text-align: left;
+        display: block;
+    }
+}
+
+
+/* ===== canggu ===== */
+
+.canggu {
+    position: relative;
+    height: 619px;
+    background: url(/assets/img/ganguu_img.jpg) center / cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    text-align: center;
+}
+
+/* Полупрозрачный фон для читаемости текста */
+.canggu::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 1;
+}
+
+.canggu__content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    color: white;
+}
+
+.canggu__title {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+}
+
+.canggu__text {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.canggu__features {
+    margin: 24px 0;
+    text-align: left;
+}
+
+.canggu__features-title {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.canggu__features-list {
+    list-style: disc;
+    padding-left: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.canggu__features-list li {
+    margin-bottom: 8px;
+}
+
+.canggu__actions {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+.canggu__btn {
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background 0.2s ease;
+    cursor: pointer;
+}
+
+.canggu__btn--primary {
+    background: #E87A4A;
+    color: white;
+}
+
+.canggu__btn--primary:hover {
+    background: #D56E3F;
+}
+
+.canggu__btn--secondary {
+    background: transparent;
+    color: white;
+    border: 1px solid rgba(255,255,255,0.5);
+}
+
+.canggu__btn--secondary:hover {
+    background: rgba(255,255,255,0.1);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .canggu {
+        height: auto;
+        padding: 60px 20px;
+        text-align: center;
+    }
+
+    .canggu__content {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .canggu__title {
+        font-size: 24px;
+    }
+
+    .canggu__text {
+        font-size: 14px;
+    }
+
+    .canggu__features-list {
+        font-size: 14px;
+    }
+
+    .canggu__actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+/* ===== Виллы в Canggu ===== */
+
+.villas-canggu {
+    border-top: 2px solid #C5C5C5;
+    margin-top: 80px;
+    padding-bottom: 55px;
+    border-bottom: 2px solid #C5C5C5;
+}
+
+.villas-canggu__header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.villas-canggu h2 {
+    text-align: left;
+    padding-top: 40px;
+}
+
+.villas-canggu__title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 60px;
+    height: 2px;
+    background: #2A6B9C;
+}
+
+.villas-canggu__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+.villa-card {
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.villa-card:hover {
+    transform: translateY(-4px);
+}
+
+.villa-card__image {
+    width: 100%;
+    height: 252px;
+    overflow: hidden;
+}
+
+.villa-card__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.villa-card__content {
+    padding: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.villa-card__price {
+    font-family: 'Gilroy', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #403B36;
+    line-height: 140%;
+    letter-spacing: 0%;
+}
+
+.villa-card__name {
+    font-size: 14px;
+    font-weight: 500;
+    color: #403B36;
+    margin-top: 4px;
+}
+
+.villa-card__description {
+    color: #0000006E;
+    margin-bottom: 16px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    max-width: 322px;
+    width: 100%;
+    padding: 0;
+}
+
+.villa-card__btn {
+    max-width: 87px;
+    width: 100%;
+    height: 29px;
+    border-radius: 23px;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+    background-color: #B3B3B3;
+    position: absolute;
+    top: 8px;
+    right: 0px;
+}
+
+.villa-card__btn:hover {
+    background: #D56E3F;
+}
+
+.villas-canggu__link {
+    padding-top: 46px;
+    padding-right: 13px;
+    padding-bottom: 65px;
+}
+
+/* Адаптивность */
+@media (max-width: 992px) {
+    .villas-canggu__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .villas-canggu__grid {
+        grid-template-columns: 1fr;
+    }
+    .villa-card__image {
+        height: 200px;
+    }
+}
+
+
+/* ===== contacts ===== */
+
+.contacts {
+flex-direction: column;
+}
+
+.contacts__title {
+    font-size: 14px;
+    font-weight: 500;
+    color: #302D28;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+    position: relative;
+}
+
+.contacts__title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 60px;
+    height: 2px;
+    background: #2A6B9C;
+}
+
+.contacts__content {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.contacts__info {
+    background: #2A6B9C;
+    color: white;
+    padding: 32px;
+    border-radius: 12px;
+    max-width: 400px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contacts__info-title {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+.contacts__info-text {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+.contacts__social {
+    display: flex;
+    gap: 16px;
+}
+
+.contacts__social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 50%;
+    transition: background 0.2s ease;
+}
+
+.contacts__social-link:hover {
+    background: rgba(255,255,255,0.3);
+}
+
+.contacts__social-link svg {
+    width: 18px;
+    height: 18px;
+    fill: white;
+}
+
+.contacts__form {
+    background: white;
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    width: 100%;
+    max-width: 400px;
+}
+
+.contacts__form-title {
+    font-size: 20px;
+    font-weight: 500;
+    color: #403B36;
+    margin-bottom: 24px;
+}
+
+.contacts__form-group {
+    margin-bottom: 16px;
+}
+
+.contacts__form-input,
+.contacts__form-textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #403B36;
+    outline: none;
+    transition: border 0.2s ease;
+}
+
+.contacts__form-input:focus,
+.contacts__form-textarea:focus {
+    border-color: #2A6B9C;
+}
+
+.contacts__form-textarea {
+    resize: vertical;
+}
+
+.contacts__form-btn {
+    width: 100%;
+    padding: 12px;
+    background: #E87A4A;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.contacts__form-btn:hover {
+    background: #D56E3F;
+}
+
+.contacts__form-footer {
+    text-align: center;
+    margin-top: 16px;
+    font-size: 14px;
+    color: #777;
+}
+
+.contacts__form-link {
+    color: #2A6B9C;
+    font-weight: 500;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    transition: color 0.2s ease;
+}
+
+.contacts__form-link:hover {
+    color: #1e557a;
+}
+
+/* Адаптивность */
+@media (max-width: 992px) {
+    .contacts__content {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .contacts__info {
+        max-width: 100%;
+    }
+
+    .contacts__form {
+        max-width: 100%;
+    }
+}
+
+
+/* ===== footer ===== */
+
+.footer {
+    padding: 60px 0 40px;
+    background: #fafafa;
+    position: relative;
+}
+
+.footer__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.footer__logo img,
+.footer__kibarer-logo img {
+    height: 24px;
+}
+
+.footer__back-to-top {
+    background: none;
+    border: none;
+    font-size: 16px;
+    color: #403B36;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.footer__back-to-top:hover {
+    color: #2A6B9C;
+}
+
+.footer__bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.footer__news {
+    max-width: 300px;
+}
+
+.footer__news-title {
+    font-size: 14px;
+    font-weight: 500;
+    color: #302D28;
+    margin-bottom: 8px;
+}
+
+.footer__news-text {
+    font-size: 14px;
+    color: #777;
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+
+.footer__subscribe-form {
+    display: flex;
+    gap: 8px;
+}
+
+.footer__subscribe-input {
+    flex-grow: 1;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #403B36;
+    outline: none;
+    transition: border 0.2s ease;
+}
+
+.footer__subscribe-input:focus {
+    border-color: #2A6B9C;
+}
+
+.footer__subscribe-btn {
+    background: #E87A4A;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.footer__subscribe-btn:hover {
+    background: #D56E3F;
+}
+
+.footer__links-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer__links-list a {
+    color: #403B36;
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer__links-list a:hover {
+    color: #2A6B9C;
+}
+
+.footer__social-icons {
+    display: flex;
+    gap: 16px;
+}
+
+.footer__social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 50%;
+    transition: background 0.2s ease;
+}
+
+.footer__social-link:hover {
+    background: rgba(255,255,255,0.3);
+}
+
+.footer__social-link svg {
+    width: 18px;
+    height: 18px;
+    fill: #403B36;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .footer__top {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .footer__bottom {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer__news {
+        max-width: 100%;
+    }
+
+    .footer__subscribe-form {
+        flex-direction: column;
+    }
+
+    .footer__social-icons {
+        justify-content: center;
+    }
 }
