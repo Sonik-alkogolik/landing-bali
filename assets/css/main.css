@@ -1096,7 +1096,7 @@ header {
     border-top: 2px solid #C5C5C5;
     border-bottom: 2px solid #C5C5C5;
     margin-top: 70px;
-    padding-bottom: 78px;
+    padding-bottom: 74px;
 }
 
 .news__title {
@@ -1353,9 +1353,9 @@ header {
 /* ===== testimonials ===== */
 
 .testimonials {
-    padding-top: 95px;
+    padding-top: 90px;
     flex-direction: column;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
 }
 
 .testimonials__title {
@@ -1366,7 +1366,7 @@ header {
     letter-spacing: 0%;
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 32px;
+    margin-bottom: 25px;
     position: relative;
     text-align: center;
     color: #403B36;
@@ -1486,6 +1486,7 @@ header {
     flex-direction: column;
     height: 762px;
     justify-content: flex-start;
+    position: relative;
 }
 
 .faq-block {
@@ -1508,17 +1509,12 @@ header {
 
 .faq__content {
     display: flex;
-    gap: 40px;
+    justify-content: space-between;
     margin-bottom: 40px;
     position: relative;
-    margin-top: 58px;
+    margin-top: 65px;
 }
 
-
-/* Фон с оверлеем */
-
-
-/* Категории */
 
 .faq__categories {
     flex-shrink: 0;
@@ -1563,13 +1559,15 @@ header {
 }
 
 .faq__questions {
+    max-width: 927px;
     width: 100%;
 }
 
 
-/* Контейнер вопроса — относительный */
 
 .faq-question {
+
+    width: 100%;
     background: #9184788A;
     border: 1px solid #FDFDFD2B;
     border-radius: 41px;
@@ -1578,7 +1576,7 @@ header {
     display: none;
     position: relative;
     /* для позиционирования ответа */
-    min-height: 79px;
+    /* min-height: 79px; */
     /* высота заголовка */
     border: 1px solid #FDFDFD2B;
 }
@@ -1592,11 +1590,28 @@ header {
 /* Заголовок — фиксированная высота */
 
 .faq-question__header {
+    /* max-width: 927px; */
+    width: 100%;
+    height: 79px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 16px;
     width: 100%;
+}
+.faq-question__header span {
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #FFFFFF;
+    padding-left: 15px;
+}.faq-question__header span:nth-child(2){
+    padding: 0;
+    height: 44p;
+    width: 44px;
 }
 
 
@@ -1615,7 +1630,6 @@ header {
     color: #777;
     line-height: 1.6;
     background: rgba(255, 255, 255, 0.95);
-    border-top: 1px solid #eee;
     z-index: 10;
 }
 
@@ -1631,8 +1645,9 @@ header {
 /* Форма обратной связи */
 
 .faq__contact {
+    position: absolute;
+    bottom: 0px;
     padding: 24px;
-    background: rgba(255, 255, 255, 0.95);
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     margin-top: 40px;
