@@ -142,8 +142,34 @@
     
     input {
         outline: none;
+        resize: none;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 20px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        vertical-align: middle;
+        color: #403B367A;
     }
-    
+    input::placeholder {
+        padding-left: 12px;
+        padding-top: 12px;
+    }
+    textarea {
+        outline: none;
+        resize: none;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 20px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        vertical-align: middle;
+        color: #403B367A;
+    }
+    textarea::placeholder {
+        padding-left: 47px;
+        padding-top: 29px;
+    }
     img {
         max-width: 100%;
         display: flex;
