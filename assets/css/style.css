@@ -151,10 +151,12 @@
         vertical-align: middle;
         color: #403B367A;
     }
+    
     input::placeholder {
         padding-left: 12px;
         padding-top: 12px;
     }
+    
     textarea {
         outline: none;
         resize: none;
@@ -166,10 +168,12 @@
         vertical-align: middle;
         color: #403B367A;
     }
+    
     textarea::placeholder {
         padding-left: 47px;
         padding-top: 29px;
     }
+    
     img {
         max-width: 100%;
         display: flex;
@@ -187,6 +191,7 @@
         display: flex;
         justify-content: center;
         overflow: hidden;
+        position: relative;
     }
     
     .wrapp {

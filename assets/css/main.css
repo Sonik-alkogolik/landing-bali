@@ -1,5 +1,9 @@
     /* ===== header ===== */
     
+    .section-header {
+        overflow: visible;
+    }
+    
     header {
         width: 100%;
         padding-top: 5px;
@@ -196,6 +200,15 @@
     
     .mobile-nav a:hover {
         border-bottom-color: #C56D42;
+    }
+    
+    .decoration-svg--header {
+        position: absolute;
+        top: 147px;
+        left: -180px;
+        width: 278px;
+        height: 201px;
+        background: url(/assets/img/deco-header.svg) no-repeat center;
     }
     /* ===== intro ===== */
     
@@ -412,6 +425,10 @@
     }
     /* ===== customize ===== */
     
+    .section-customize_text {
+        overflow: visible;
+    }
+    
     .customize_text_block {
         display: flex;
         flex-direction: column;
@@ -431,7 +448,26 @@
     .customize_text_item p {
         color: #403B36;
     }
-    /* ===== about-me-me ===== */
+    
+    .decoration-svg--about-me {
+        position: absolute;
+        top: -85px;
+        right: 0px;
+        width: 325px;
+        height: 266px;
+        background: url(/assets/img/deco-about-me.svg);
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+    
+    .decoration-svg--about-me2 {
+        position: absolute;
+        bottom: 85px;
+        left: 0;
+        width: 587px;
+        height: 481px;
+        background: url(/assets/img/deco-about-me2.svg) no-repeat left;
+    }
     
     .about-me {
         /* height: 704px; */
@@ -659,6 +695,19 @@
         z-index: 1;
     }
     /* ===== Реализованные проекты ===== */
+    
+    .section-projects {
+        overflow: visible;
+    }
+    
+    .decoration-svg--projects {
+        position: absolute;
+        top: 80px;
+        right: 0px;
+        width: 712px;
+        height: 1123px;
+        background: url(/assets/img/deco-projects-1.svg) no-repeat right;
+    }
     
     .projects {
         border-top: 2px solid #C5C5C5;
@@ -1047,34 +1096,28 @@
     }
     /* ===== news ===== */
     
+    .decoration-svg--news {
+        position: absolute;
+        top: 80px;
+        left: 0px;
+        width: 712px;
+        height: 1123px;
+        background: url(/assets/img/deco-news.svg) no-repeat left;
+        z-index: -1;
+    }
+    
     .news {
         flex-direction: column;
         border-top: 2px solid #C5C5C5;
         border-bottom: 2px solid #C5C5C5;
         margin-top: 70px;
         padding-bottom: 74px;
+        overflow: visible;
     }
     
     .news__title {
-        /* font-size: 14px;
-    font-weight: 500;
-    color: #302D28;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    margin-bottom: 24px;
-    position: relative; */
         margin-bottom: 70px;
         padding-top: 42px;
-    }
-    
-    .news__title::after {
-        content: '';
-        position: absolute;
-        bottom: -10px;
-        left: 0;
-        width: 60px;
-        height: 2px;
-        background: #2A6B9C;
     }
     /* ===== Row 1: Фото + Текст ===== */
     
@@ -1318,17 +1361,6 @@
         position: relative;
         text-align: center;
         color: #403B36;
-    }
-    
-    .testimonials__title::after {
-        content: '';
-        position: absolute;
-        bottom: -10px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 60px;
-        height: 2px;
-        background: #2A6B9C;
     }
     
     .testimonials__slider {
@@ -1662,6 +1694,26 @@
         border-top: 2px solid #C5C5C5;
         padding-bottom: 78px;
         border-bottom: 2px solid #C5C5C5;
+        overflow: visible;
+    }
+    
+    .decoration-svg--consultation {
+        position: absolute;
+        top: -155px;
+        left: 0px;
+        width: 1123px;
+        height: 712px;
+        background: url(/assets/img/deco-consultation.svg) no-repeat top left;
+    }
+    
+    .decoration-svg--consultation2 {
+        position: absolute;
+        top: -221px;
+        right: 0px;
+        width: 712px;
+        height: 1123px;
+        background: url(/assets/img/deco-consultation2.svg) no-repeat right;
+        z-index: -1;
     }
     
     .consultation__title {
@@ -2577,6 +2629,21 @@
         }
     }
     /* ===== footer ===== */
+    
+    .section-footer {
+        overflow: visible;
+    }
+    
+    .decoration-svg--footer {
+        position: absolute;
+        margin: 0;
+        top: 17%;
+        left: 50%;
+        transform: rotate(1deg);
+        width: 1123px;
+        height: 712px;
+        background: url(/assets/img/deco-footer.svg) no-repeat top center;
+    }
     
     .footer {
         padding: 60px 0 40px;
