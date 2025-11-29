@@ -69,50 +69,50 @@ document.addEventListener('DOMContentLoaded', function() {
 
 });
 
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function() {
     // Найти все слайдеры
     const sliders = document.querySelectorAll('.project-card__image-slider');
 
     sliders.forEach(slider => {
-      const slides = slider.querySelectorAll('.slide');
-      const dots = slider.querySelectorAll('.dot');
-      const prevBtn = slider.querySelector('.slider-btn--prev');
-      const nextBtn = slider.querySelector('.slider-btn--next');
+        const slides = slider.querySelectorAll('.slide');
+        const dots = slider.querySelectorAll('.dot');
+        const prevBtn = slider.querySelector('.slider-btn--prev');
+        const nextBtn = slider.querySelector('.slider-btn--next');
 
-      let currentIndex = 0;
+        let currentIndex = 0;
 
-      const updateSlider = () => {
-        // Снимаем active со всех
-        slides.forEach(s => s.classList.remove('active'));
-        dots.forEach(d => d.classList.remove('active'));
+        const updateSlider = () => {
+            // Снимаем active со всех
+            slides.forEach(s => s.classList.remove('active'));
+            dots.forEach(d => d.classList.remove('active'));
 
-        // Ставим active на текущий
-        slides[currentIndex].classList.add('active');
-        dots[currentIndex].classList.add('active');
-      };
+            // Ставим active на текущий
+            slides[currentIndex].classList.add('active');
+            dots[currentIndex].classList.add('active');
+        };
 
-      prevBtn.addEventListener('click', () => {
-        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-        updateSlider();
-      });
-
-      nextBtn.addEventListener('click', () => {
-        currentIndex = (currentIndex + 1) % slides.length;
-        updateSlider();
-      });
-
-      dots.forEach(dot => {
-        dot.addEventListener('click', () => {
-          currentIndex = parseInt(dot.getAttribute('data-index'));
-          updateSlider();
+        prevBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+            updateSlider();
         });
-      });
+
+        nextBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % slides.length;
+            updateSlider();
+        });
+
+        dots.forEach(dot => {
+            dot.addEventListener('click', () => {
+                currentIndex = parseInt(dot.getAttribute('data-index'));
+                updateSlider();
+            });
+        });
     });
 
 });
 
 
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function() {
     const slider = document.querySelector('.testimonials__slider');
     const slides = slider.querySelectorAll('.testimonial-slide');
     const prevBtn = document.querySelector('.testimonial-nav-btn--prev');
@@ -137,7 +137,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function() {
     const categories = document.querySelectorAll('.faq-category');
     const questionsContainer = document.querySelector('.faq__questions');
 
@@ -166,24 +166,24 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-  // Внутри обработчика клика по заголовку:
-questionsContainer.addEventListener('click', function (e) {
-    const header = e.target.closest('.faq-question__header');
-    if (!header) return;
+    // Внутри обработчика клика по заголовку:
+    questionsContainer.addEventListener('click', function(e) {
+        const header = e.target.closest('.faq-question__header');
+        if (!header) return;
 
-    const question = header.closest('.faq-question');
-    const answer = question.querySelector('.faq-question__answer');
+        const question = header.closest('.faq-question');
+        const answer = question.querySelector('.faq-question__answer');
 
-    // Закрываем все остальные
-    document.querySelectorAll('.faq-question.open').forEach(q => {
-        if (q !== question) {
-            q.classList.remove('open');
-            q.querySelector('.faq-question__answer').classList.remove('show');
-        }
+        // Закрываем все остальные
+        document.querySelectorAll('.faq-question.open').forEach(q => {
+            if (q !== question) {
+                q.classList.remove('open');
+                q.querySelector('.faq-question__answer').classList.remove('show');
+            }
+        });
+
+        // Переключаем текущий
+        question.classList.toggle('open');
+        answer.classList.toggle('show');
     });
-
-    // Переключаем текущий
-    question.classList.toggle('open');
-    answer.classList.toggle('show');
-});
 });

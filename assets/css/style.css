@@ -215,9 +215,21 @@
         }
     }
     
+    @media(max-width:880px) {
+        h1 {
+            font-size: 32px;
+        }
+    }
+    
+    @media (max-width: 500px) {
+        h1 {
+            font-size: 30px;
+        }
+    }
+    
     @media(max-width:480px) {
         h1 {
-            font-size: 28px;
+            font-size: 22px;
         }
         p {
             font-size: 12px;
@@ -230,6 +242,12 @@
     
     @media(max-width:390px) {
         h1 {
-            font-size: 24px;
+            font-size: 20px;
+        }
+    }
+    
+    @media (max-width: 350px) {
+        h1 {
+            font-size: 18px;
         }
     }

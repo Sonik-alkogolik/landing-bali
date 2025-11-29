@@ -202,6 +202,10 @@
         border-bottom-color: #C56D42;
     }
     
+    .decoration-svg {
+        display: none;
+    }
+    
     .decoration-svg--header {
         position: absolute;
         top: 147px;
@@ -2635,14 +2639,14 @@
     }
     
     .decoration-svg--footer {
-        position: absolute;
+        /* position: absolute;
         margin: 0;
         top: 17%;
         left: 50%;
         transform: rotate(1deg);
         width: 1123px;
         height: 712px;
-        background: url(/assets/img/deco-footer.svg) no-repeat top center;
+        background: url(/assets/img/deco-footer.svg) no-repeat top center; */
     }
     
     .footer {
