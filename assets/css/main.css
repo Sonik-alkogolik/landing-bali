@@ -1,0 +1,3567 @@
+    /* ===== header ===== */
+    
+    .section-header {
+        overflow: visible;
+    }
+    
+    header {
+        width: 100%;
+        padding-top: 5px;
+    }
+    
+    .header-wrapp {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .header-item {
+        display: flex;
+    }
+    
+    .logo {
+        max-width: 61px;
+        width: 100%;
+        height: 57px;
+    }
+    
+    .kibarer {
+        max-width: 97px;
+        width: 100%;
+        height: 52px;
+        margin-top: 5px;
+    }
+    
+    .login {
+        max-width: 74px;
+        width: 100%;
+        height: 35px;
+        margin-top: 22px;
+        border: 1px solid #0000001C;
+        border-radius: 40px;
+        background-color: #FFFFFF;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .login img {
+        max-width: 15px;
+        width: 100%;
+        height: 15px;
+        margin-right: 15px;
+    }
+    
+    .top-title {
+        padding-top: 83px;
+    }
+    /* ===== menu ===== */
+    
+    .menu-top {
+        max-width: 592px;
+        width: 100%;
+        margin: 0 auto;
+        /* margin-top: 83px; */
+        margin-top: 103px;
+    }
+    
+    .menu-top ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .menu-top ul li {
+        color: #403B36;
+    }
+    
+    .menu-top ul li a {
+        color: #403B36;
+        text-decoration: none;
+        padding-bottom: 4px;
+        border-bottom: 1.3px solid transparent;
+        transition: border-bottom-color 1.2s ease;
+    }
+    
+    .menu-top ul li a:hover {
+        border-bottom-color: #C56D42;
+    }
+    
+    .mobile-header,
+    .mobile-menu-overlay {
+        display: none;
+    }
+    
+    .mobile-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 16px 20px;
+        background: #fff;
+        z-index: 1000;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .burger-btn {
+        background: none;
+        border: none;
+        cursor: pointer;
+        width: 24px;
+        height: 16px;
+        position: relative;
+    }
+    
+    .burger-btn span,
+    .burger-btn span::before,
+    .burger-btn span::after {
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background: #403B36;
+        border-radius: 1px;
+        transition: 0.3s;
+    }
+    
+    .burger-btn span::before,
+    .burger-btn span::after {
+        content: '';
+        left: 0;
+    }
+    
+    .burger-btn span::before {
+        top: -6px;
+    }
+    
+    .burger-btn span::after {
+        top: 6px;
+    }
+    
+    .mobile-user-icon {
+        width: 24px;
+        height: 24px;
+    }
+    /* Mobile overlay menu */
+    
+    .mobile-menu-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+        transition: border-bottom-color 1.2s ease;
+    }
+    
+    .mobile-menu-overlay.active {
+        display: block;
+        transition: border-bottom-color 1.2s ease;
+    }
+    
+    .mobile-menu-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        padding: 24px;
+        overflow-y: auto;
+    }
+    
+    .mobile-menu-close {
+        background: none;
+        border: none;
+        font-size: 32px;
+        color: #403B36;
+        float: right;
+        margin-bottom: 32px;
+        cursor: pointer;
+    }
+    
+    .mobile-nav {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    
+    .mobile-nav a {
+        color: #403B36;
+        text-decoration: none;
+        font-size: 20px;
+        padding-bottom: 4px;
+        border-bottom: 1.3px solid transparent;
+    }
+    
+    .mobile-nav a:hover {
+        border-bottom-color: #C56D42;
+    }
+    /* .decoration-svg {
+        display: none;
+    } */
+    
+    .decoration-svg--header {
+        position: absolute;
+        top: 147px;
+        left: 0px;
+        width: 170px;
+        height: 201px;
+        background: url(/assets/img/deco-header.svg) no-repeat center;
+        max-width: 100vw;
+    }
+    /* ===== intro ===== */
+    
+    .section-intro {
+        background: url(/assets/img/intro-bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* margin-top: 62px; */
+        margin-top: 69px;
+        overflow: visible;
+    }
+    
+    .intro {
+        width: 100%;
+        height: 733px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+    
+    .intro-text {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        max-width: 755px;
+        width: 100%;
+        padding-top: 156px;
+    }
+    
+    .intro p {
+        display: flex;
+        justify-content: center;
+        max-width: 550px;
+        width: 100%;
+        font-family: Gilroy;
+        font-weight: 400;
+        font-size: 16px;
+        color: #FFFFFF;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: center;
+        margin-bottom: 5px;
+        padding: 0 0 0 0;
+    }
+    
+    .intro h2 {
+        font-family: Gilroy;
+        font-weight: 700;
+        font-style: Bold;
+        font-size: 66px;
+        color: #FFFFFF;
+        line-height: 100%;
+        letter-spacing: 0%;
+        padding-top: 0px;
+    }
+    
+    .intro span {
+        font-family: Gilroy;
+        font-weight: 400;
+        font-size: 16px;
+        color: #FFFFFF;
+        line-height: 100%;
+        letter-spacing: 0%;
+        padding-top: 25px;
+    }
+    
+    .intro .intro-text button {
+        margin-top: 61px;
+        background-color: #DC7745;
+        padding: 12px 29px;
+        border-radius: 9px;
+        font-weight: 700;
+        font-style: Bold;
+        font-size: 13.2px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+    
+    .search-bar {
+        top: -32px;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        background: white;
+        border-radius: 50px;
+        padding: 8px 16px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        max-width: 600px;
+        width: 100%;
+        height: 64px;
+        font-family: 'Gilroy', Arial, sans-serif;
+        justify-content: space-between;
+    }
+    
+    .search-field {
+        max-width: 150px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 10px;
+    }
+    
+    .search-field-btn {
+        display: flex;
+        align-items: center;
+    }
+    
+    .search-field label {
+        font-weight: 300;
+        font-style: Light;
+        font-size: 11px;
+        color: #302D28;
+        white-space: nowrap;
+    }
+    /* ===== Кастомный селект ===== */
+    
+    .custom-select {
+        position: relative;
+        width: 100%;
+        font-size: 16px;
+        font-weight: 500;
+        color: #C56D42;
+        cursor: pointer;
+    }
+    
+    .select-selected {
+        padding: 4px 0;
+        outline: none;
+        position: relative;
+    }
+    
+    .select-selected.active::after {
+        transform: translateY(-50%) rotate(180deg);
+    }
+    
+    .select-items {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: -10px;
+        /* компенсируем отрицательный отступ метки */
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        z-index: 10;
+        display: none;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    
+    .select-items.show {
+        display: flex;
+    }
+    
+    .select-items li {
+        padding: 10px 20px 10px 10px;
+        color: #403B36;
+        list-style: none;
+        cursor: pointer;
+        transition: background 0.2s;
+    }
+    
+    .select-items li:hover {
+        background: #f9f9f9;
+    }
+    
+    .select-items li.selected {
+        color: #C56D42;
+        font-weight: 500;
+    }
+    
+    .filters-btn {
+        background: none;
+        border: none;
+        color: #D9C6A5;
+        cursor: pointer;
+        padding: 8px 12px;
+        margin: 0 12px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 100%;
+    }
+    
+    .filters-btn:hover {
+        color: #403B36;
+    }
+    
+    .results-btn {
+        background: #E87A4A;
+        /* оранжевый цвет из макета */
+        color: white;
+        border: none;
+        border-radius: 50px;
+        padding: 8px 16px;
+        font-size: 14px;
+        font-weight: 500;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        transition: background 0.2s ease;
+    }
+    
+    .results-btn:hover {
+        background: #D56E3F;
+    }
+    
+    .results-btn svg {
+        width: 16px;
+        height: 16px;
+    }
+    /* ===== customize ===== */
+    
+    .section-customize_text {
+        overflow: visible;
+    }
+    
+    .customize_text_block {
+        display: flex;
+        flex-direction: column;
+        max-width: 784px;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 37px;
+    }
+    
+    .customize_text_item {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    
+    .customize_text_item p {
+        color: #403B36;
+    }
+    
+    .decoration-svg--about-me {
+        position: absolute;
+        top: -85px;
+        right: 0px;
+        width: 325px;
+        height: 266px;
+        background: url(/assets/img/deco-about-me.svg);
+        background-repeat: no-repeat;
+        background-position: right;
+        max-width: 100vw;
+    }
+    
+    .decoration-svg--about-me2 {
+        position: absolute;
+        bottom: 85px;
+        left: 0;
+        width: 587px;
+        height: 481px;
+        background: url(/assets/img/deco-about-me2.svg) no-repeat left;
+        max-width: 100vw;
+    }
+    
+    .about-me {
+        /* height: 704px; */
+        height: auto;
+        /* background: #fafafa; */
+        /* padding-top: 40px; */
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-bottom: 70px;
+        border-top: 2px solid #C5C5C5;
+    }
+    
+    .about-me h2 {
+        font-weight: 700;
+        font-style: Bold;
+        font-size: 24px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: left;
+        padding-top: 39px;
+    }
+    
+    .about-me-content {
+        display: flex;
+        align-items: flex-start;
+        height: 100%;
+    }
+    
+    .about-me-text {
+        width: 100%;
+        margin-top: 50px;
+        height: 100%;
+        flex-direction: column;
+    }
+    
+    .about-me-text h3 {
+        font-family: Gilroy;
+        font-weight: 700;
+        font-style: Bold;
+        font-size: 36px;
+        line-height: 150%;
+        letter-spacing: 0%;
+        color: #155971;
+        margin-bottom: 20px;
+    }
+    
+    .about-me-image-mob {
+        display: none;
+    }
+    
+    .about-me-text-title {}
+    
+    .about-me-text-deskription {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        padding-left: 5px;
+        padding-top: 5px;
+    }
+    
+    .about-me-text p {
+        /* font-size: 16px;
+    color: #403B36;
+    line-height: 1.6;
+    margin-bottom: 20px; */
+        text-align: left;
+        padding: 0 0 0 0;
+        line-height: 150%;
+        padding-top: 12px;
+        padding-bottom: 29px;
+    }
+    /* .about-me-text p:last-child {
+    margin-bottom: 32px;
+} */
+    
+    .read-more {
+        display: inline-block;
+        color: #E87A4A;
+        font-size: 20px;
+        font-weight: 500;
+        text-decoration: underline;
+        text-underline-offset: 4px;
+        transition: color 0.2s ease;
+        padding-bottom: 81px;
+    }
+    
+    .read-more:hover {
+        color: #1e557a;
+    }
+    
+    .about-me-text-deskription-text {
+        max-width: 49%;
+        height: 592px;
+        border-bottom: 2px solid #C5C5C5
+    }
+    
+    .about-me-image-desktop {
+        max-width: 49%;
+        height: 592px;
+        overflow: hidden;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        position: relative;
+    }
+    
+    .about-me-image-desktop img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    /* ===== Вертикальная пунктирная линия через ::after ===== */
+    
+    .section-stats-line {
+        background: #1E4A5F;
+        padding: 40px 0;
+        align-items: center;
+        width: 100%;
+        height: 260px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+    
+    .about-me-me::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #C5C5C5;
+    }
+    
+    .about-me-me h2 {
+        padding-top: 40px;
+    }
+    
+    .stats-line {
+        display: flex;
+        max-width: 1116px;
+        width: 100%;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-top: 10px;
+        height: 193px;
+        position: relative;
+    }
+    
+    .stats-line__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        /* gap: 12px; */
+        text-align: center;
+        position: relative;
+    }
+    
+    .stats-line__item img {
+        height: 149px;
+    }
+    /* ===== Элемент: stats-line__icon ===== */
+    
+    .stats-line__icon {
+        font-size: 48px;
+        font-weight: 700;
+        color: #FFFFFF;
+        line-height: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .stats-line__icon svg {
+        width: 32px;
+        height: 32px;
+        fill: none;
+        stroke: #FFFFFF;
+    }
+    /* ===== Элемент: stats-line__text ===== */
+    
+    .stats-line__text {
+        font-size: 16px;
+        color: #FFFFFF;
+        line-height: 1.4;
+        font-weight: 300;
+        white-space: nowrap;
+    }
+    
+    .stats-line__text br {
+        display: block;
+        content: "";
+        margin: 0;
+    }
+    /* 
+.stats-line__dot {
+    width: 8px;
+    height: 8px;
+    background: #FFFFFF;
+    border-radius: 50%;
+    margin-top: 16px;
+} */
+    
+    .stats-line::after {
+        content: '';
+        position: absolute;
+        bottom: 7px;
+        max-width: 930px;
+        width: 100%;
+        left: 78px;
+        right: 0;
+        height: 1px;
+        background: rgba(255, 255, 255, 0.3);
+        z-index: 2;
+    }
+    
+    .stats-line__dot {
+        width: 15px;
+        height: 15px;
+        background: #FFFFFF;
+        border-radius: 50%;
+        /* margin-top: 16px; */
+        position: relative;
+        z-index: 1;
+    }
+    /* ===== Реализованные проекты ===== */
+    
+    .section-projects {
+        overflow: visible;
+    }
+    
+    .decoration-svg--projects {
+        position: absolute;
+        top: 80px;
+        right: 0px;
+        width: 712px;
+        height: 1123px;
+        background: url(/assets/img/deco-projects-1.svg) no-repeat right;
+        max-width: 100vw;
+    }
+    
+    .projects {
+        border-top: 2px solid #C5C5C5;
+        margin-top: 80px;
+        padding-bottom: 50px;
+        border-bottom: 2px solid #C5C5C5;
+    }
+    
+    .project-title {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .projects h2 {
+        text-align: left;
+        /* padding-bottom: 85px; */
+        padding-top: 40px;
+    }
+    /* 
+.projects__title {
+    font-size: 14px;
+    font-weight: 500;
+    color: #302D28;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+    position: relative;
+} */
+    
+    .projects__title::after {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        width: 60px;
+        height: 2px;
+        background: #2A6B9C;
+    }
+    
+    .projects__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+        margin-bottom: 40px;
+    }
+    
+    .project-card {
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .project-card:hover {
+        transform: translateY(-4px);
+        /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); */
+    }
+    
+    .project-card__image {
+        width: 100%;
+        height: 252px;
+        overflow: hidden;
+    }
+    
+    .project-card__image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    
+    .project-card__content {
+        padding: 10px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .project-card__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 8px;
+    }
+    
+    .project-card__name {
+        font-size: 14px;
+        font-weight: 500;
+        color: #403B36;
+    }
+    
+    .project-card__price {
+        font-family: Gilroy;
+        font-weight: 700;
+        font-style: Bold;
+        font-size: 20px;
+        color: #403B36;
+        line-height: 140%;
+        letter-spacing: 0%;
+    }
+    
+    .project-card__description {
+        color: #0000006E;
+        margin-bottom: 16px;
+        text-align: left;
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 14px;
+        line-height: 140%;
+        letter-spacing: 0%;
+        max-width: 322px;
+        width: 100%;
+        padding: 0px;
+    }
+    
+    .project-card__btn {
+        max-width: 87px;
+        width: 100%;
+        height: 29px;
+        border-radius: 23px;
+        font-weight: 700;
+        font-style: Bold;
+        font-size: 11px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: #FFFFFF;
+        background-color: #B3B3B3;
+        position: absolute;
+        top: 8px;
+        right: 0px;
+    }
+    
+    .project-card__btn:hover {
+        background: #D56E3F;
+    }
+    
+    .projects__footer {
+        text-align: right;
+    }
+    
+    .projects__link {
+        /* display: inline-block;
+    color: #2A6B9C;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    transition: color 0.2s ease; */
+        padding-top: 46px;
+        padding-right: 13px;
+        padding-bottom: 65px;
+    }
+    
+    .projects__link:hover {
+        color: #1e557a;
+    }
+    /* ===== Проекты ROOT BALI ===== */
+    
+    .root-projects {
+        /* padding: 80px 0; */
+        /* background: #fff; */
+        flex-direction: column;
+    }
+    
+    .root-projects__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        font-size: 20px;
+        padding-top: 35px;
+    }
+    /* .root-projects__title {
+    font-size: 14px;
+    font-weight: 500;
+    color: #302D28;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+} */
+    
+    .root-projects__title::after {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        width: 60px;
+        height: 2px;
+        background: #2A6B9C;
+    }
+    
+    .root-projects__link {
+        padding-right: 14px;
+        padding-bottom: 74px;
+    }
+    /* .root-projects__link:hover {
+    color: #D56E3F;
+} */
+    
+    .root-projects__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+    }
+    /* Карточка с фиксированной высотой */
+    
+    .root-project-card {
+        overflow: hidden;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        position: relative;
+    }
+    
+    .root-project-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+    /* Слайдер */
+    
+    .root-project-card__image-slider {
+        position: relative;
+        width: 100%;
+        height: 495px;
+        overflow: hidden;
+    }
+    
+    .root-slider-container {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        transition: transform 0.4s ease;
+    }
+    
+    .root-slide {
+        min-width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        opacity: 0;
+        transition: opacity 0.4s ease;
+    }
+    
+    .root-slide.active {
+        opacity: 1;
+    }
+    
+    .root-slider-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(255, 255, 255, 0.7);
+        border: none;
+        border-radius: 50%;
+        width: 36px;
+        height: 36px;
+        font-size: 20px;
+        color: #403B36;
+        cursor: pointer;
+        z-index: 5;
+        transition: background 0.2s ease;
+    }
+    
+    .root-slider-btn:hover {
+        background: white;
+    }
+    
+    .root-slider-btn--prev {
+        left: 12px;
+    }
+    
+    .root-slider-btn--next {
+        right: 12px;
+    }
+    
+    .root-slider-dots {
+        position: absolute;
+        bottom: 12px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 8px;
+        z-index: 5;
+    }
+    
+    .root-dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.7);
+        cursor: pointer;
+        transition: background 0.2s ease;
+    }
+    
+    .root-dot.active {
+        background: white;
+    }
+    
+    .root-project-card__tag {
+        position: absolute;
+        top: 20px;
+        right: 15px;
+        background: rgba(255, 255, 255, 0.85);
+        color: #403B36;
+        font-size: 12px;
+        font-weight: 500;
+        padding: 4px 8px;
+        border-radius: 20px;
+        backdrop-filter: blur(4px);
+        z-index: 10;
+        width: 87px;
+        height: 29px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .root-project-card:hover .root-project-card__tag {
+        background: white;
+    }
+    /* Контент */
+    
+    .root-project-card__content {
+        padding: 16px;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-left: 0px;
+    }
+    
+    .root-project-card__name {
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 20px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        position: absolute;
+        color: #F5F5F5;
+        bottom: 160px;
+        left: 22px;
+    }
+    
+    .root-project-card__description {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: left;
+        padding-left: 10px;
+    }
+    
+    .root-project-card__price {
+        font-size: 16px;
+        font-weight: 700;
+        font-style: Bold;
+        font-size: 20px;
+        line-height: 140%;
+        letter-spacing: 0%;
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+    /* ===== news ===== */
+    
+    .decoration-svg--news {
+        position: absolute;
+        top: 80px;
+        left: 0px;
+        width: 712px;
+        height: 1123px;
+        background: url(/assets/img/deco-news.svg) no-repeat left;
+        z-index: -1;
+        max-width: 100vw;
+    }
+    
+    .news {
+        flex-direction: column;
+        /* border-top: 2px solid #C5C5C5;
+        border-bottom: 2px solid #C5C5C5; */
+        margin-top: 70px;
+        padding-bottom: 80px;
+        overflow: visible;
+    }
+    
+    .news__title {
+        margin-bottom: 70px;
+        padding-top: 42px;
+        border-top: 2px solid #C5C5C5;
+    }
+    /* ===== Row 1: Фото + Текст ===== */
+    
+    .news__row {
+        display: flex;
+        margin-bottom: 24px;
+        justify-content: space-between;
+        margin-bottom: 24px;
+    }
+    
+    .news__featured {
+        max-width: 792px;
+        width: 100%;
+        height: 276px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+    
+    .news__featured-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    
+    .news__featured-caption {
+        position: absolute;
+        bottom: 18px;
+        left: 8px;
+        right: 0;
+        /* background: rgba(0, 0, 0, 0.5); */
+        color: white;
+        padding: 12px 16px;
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 20px;
+        line-height: 100%;
+        letter-spacing: 0%;
+    }
+    
+    .news__text-block {
+        max-width: 384px;
+        width: 100%;
+        background: #E7E7E7CC;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 24px 26px;
+    }
+    
+    .news__text-block p {
+        font-weight: 300;
+        font-style: Light;
+        font-size: 15px;
+        line-height: 133%;
+        letter-spacing: 0%;
+        color: #403B36;
+        text-align: left;
+    }
+    
+    .news__text-block h3 {
+        font-weight: 300;
+        font-style: Light;
+        font-size: 15px;
+        line-height: 133%;
+        letter-spacing: 0%;
+        color: #403B36;
+        text-align: left;
+    }
+    
+    .news__read-more {
+        display: inline-block;
+        /* color: #E87A4A; */
+        color: #155971;
+        font-size: 16px;
+        font-weight: 500;
+        text-decoration: underline;
+        text-underline-offset: 4px;
+        transition: color 0.2s ease;
+    }
+    
+    .news__read-more:hover {
+        color: #D56E3F;
+    }
+    /* ===== Row 2: Подписка + Новости ===== */
+    
+    .news__row--bottom {
+        display: flex;
+        gap: 24px;
+        align-items: stretch;
+    }
+    
+    .news__subscribe {
+        max-width: 384px;
+        width: 100%;
+        padding: 16px;
+        background: #E7E7E7CC;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+        justify-content: flex-start;
+    }
+    
+    .news__subscribe-text {
+        color: #403B36;
+        font-weight: 300;
+        font-style: Light;
+        font-size: 15px;
+        line-height: 133%;
+        letter-spacing: 0%;
+        /* padding-bottom: 39px; */
+        padding-top: 40px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .news__subscribe-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 35px;
+        /* gap: 12px; */
+    }
+    
+    .news__subscribe-input {
+        max-width: 336px;
+        width: 100%;
+        padding: 11px 16px;
+        border: 1px solid #0000002B;
+        border-radius: 25px;
+        font-size: 14px;
+        color: #403B36;
+        outline: none;
+        transition: border 0.2s ease;
+        margin-bottom: 10px;
+    }
+    
+    .news__subscribe-input:focus {
+        border-color: #2A6B9C;
+    }
+    
+    .news__subscribe-input::placeholder {
+        color: #155971;
+    }
+    
+    .news__subscribe-btn {
+        max-width: 336px;
+        width: 100%;
+        padding: 12px;
+        background: #155971;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        font-size: 14px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: background 0.2s ease;
+        border-radius: 25px;
+    }
+    
+    .news__subscribe-btn:hover {
+        background: #D56E3F;
+    }
+    
+    .news__latest {
+        width: 792px;
+        height: 276px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+    
+    .news__latest-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    
+    .news__latest-content {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        /* background: rgba(0, 0, 0, 0.5);
+    color: white; */
+        padding: 23px;
+        display: flex;
+    }
+    
+    .news__latest-content h3 {
+        font-size: 20px;
+        font-weight: 500;
+        /* margin-bottom: 8px; */
+    }
+    
+    .news__latest-content p {
+        font-size: 14px;
+        line-height: 1.5;
+        margin: 0;
+    }
+    /* ===== testimonials ===== */
+    
+    .testimonials {
+        padding-top: 90px;
+        flex-direction: column;
+        padding-bottom: 73px;
+    }
+    
+    .testimonials__title {
+        font-weight: 600;
+        font-style: SemiBold;
+        font-size: 24px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+        position: relative;
+        text-align: center;
+        color: #403B36;
+    }
+    
+    .testimonials__slider {
+        max-width: 616px;
+        width: 100%;
+        margin: 0 auto;
+        border-radius: 12px;
+        position: relative;
+        text-align: center;
+    }
+    
+    .testimonial-slide {
+        display: none;
+        opacity: 0;
+        transition: opacity 0.4s ease;
+    }
+    
+    .testimonial-slide.active {
+        display: block;
+        opacity: 1;
+    }
+    
+    .testimonial-quote {
+        font-size: 20px;
+        color: #403B36;
+        line-height: 100%;
+        margin-bottom: 24px;
+        position: relative;
+    }
+    
+    .testimonial-quote::before,
+    .testimonial-quote::after {
+        content: '"';
+        font-size: 32px;
+        color: #C56D42;
+        opacity: 0.3;
+        position: absolute;
+    }
+    
+    .testimonial-quote::before {
+        top: -10px;
+        left: -10px;
+    }
+    
+    .testimonial-quote::after {
+        bottom: -20px;
+        right: -10px;
+    }
+    
+    .testimonial-author {
+        font-family: "Betmo", sans-serif;
+        color: #403B36;
+        margin-bottom: 16px;
+        display: block;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: center;
+    }
+    
+    .testimonial-signature {
+        text-align: center;
+        margin-top: 16px;
+    }
+    
+    .testimonial-signature svg {
+        width: 80px;
+        height: 30px;
+        stroke: #403B36;
+        stroke-width: 2;
+        stroke-linecap: round;
+    }
+    
+    .testimonials__nav {
+        display: flex;
+        justify-content: center;
+        gap: 84px;
+        margin-top: 0px;
+    }
+    
+    .testimonial-nav-btn {
+        background: none;
+        border: none;
+        font-size: 54px;
+        color: #C56D42;
+        cursor: pointer;
+        padding: 8px 12px;
+        border-radius: 50%;
+        transition: background 0.2s ease;
+    }
+    
+    .testimonial-nav-btn:hover {
+        background: #f5fafd;
+    }
+    /* ===== FAQ ===== */
+    
+    .faq {
+        background: #403B36;
+        flex-direction: column;
+        height: 762px;
+        justify-content: flex-start;
+        position: relative;
+        overflow: visible;
+        margin-bottom: 175px;
+    }
+    
+    .faq-block {
+        background: url('/assets/img/faq_bg.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .faq__title {
+        /* font-size: 14px;
+    font-weight: 500;
+    color: #302D28;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+    position: relative; */
+        color: #FFFFFF;
+        margin-top: 40px;
+    }
+    
+    .faq__content {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 105px;
+        position: relative;
+        margin-top: 60px;
+    }
+    
+    .faq__categories {
+        flex-shrink: 0;
+        width: 200px;
+    }
+    
+    .faq-category {
+        display: flex;
+        width: max-content;
+        text-align: left;
+        font-size: 24px;
+        color: #FFFFFF8A;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        margin-bottom: 12px;
+        background: transparent;
+    }
+    
+    .faq-category.active {
+        color: #FFFFFF;
+        padding-bottom: 3px;
+        border-bottom: 1px solid #ddd;
+    }
+    
+    .faq-question__toggle-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 24px;
+        height: 24px;
+        font-size: 20px;
+        color: #403B36;
+        transition: transform 0.3s ease;
+        user-select: none;
+    }
+    /* Когда вопрос открыт — иконка поворачивается */
+    
+    .faq-question.open .faq-question__toggle-icon {
+        transform: rotate(45deg);
+    }
+    
+    .faq__questions {
+        max-width: 927px;
+        width: 100%;
+    }
+    
+    .faq-question {
+        width: 100%;
+        background: #9184788A;
+        border: 1px solid #FDFDFD2B;
+        border-radius: 41px;
+        overflow: visible;
+        /* важно! не hidden */
+        display: none;
+        position: relative;
+        /* для позиционирования ответа */
+        /* min-height: 79px; */
+        /* высота заголовка */
+        border: 1px solid #FDFDFD2B;
+    }
+    
+    .faq-question.show {
+        display: flex;
+        border-radius: 41px;
+    }
+    /* Заголовок — фиксированная высота */
+    
+    .faq-question__header {
+        /* max-width: 927px; */
+        width: 100%;
+        height: 79px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px;
+        width: 100%;
+        cursor: pointer;
+    }
+    
+    .faq-question__header span {
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 24px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: center;
+        color: #FFFFFF;
+        padding-left: 15px;
+    }
+    
+    .faq-question__header span:nth-child(2) {
+        padding: 0;
+        height: 44p;
+        width: 44px;
+    }
+    
+    .faq-question__answer {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        padding: 0 16px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        font-size: 18px;
+        color: #777;
+        line-height: 1.4;
+        z-index: 10;
+    }
+    
+    .faq-question__answer.show {
+        padding: 30px;
+        max-height: 500px;
+        border: 1px solid #FDFDFD2B;
+        border-radius: 41px;
+        background: #5f5650;
+        color: #FFF;
+    }
+    /* Форма обратной связи */
+    
+    .faq__contact {
+        position: absolute;
+        bottom: 0%;
+        left: 50%;
+        transform: translate(-50%, 32%);
+        margin: 0 auto;
+        border-radius: 12px;
+    }
+    
+    .faq__contact-title {
+        color: #FFFFFF;
+        text-align: center;
+        padding-bottom: 31px;
+    }
+    
+    .faq__contact-form {
+        display: flex;
+        gap: 24px;
+        align-items: flex-start;
+    }
+    
+    .faq__contact-textarea {
+        max-width: 608px;
+        width: 100%;
+        height: 189px;
+        outline: none;
+        border-radius: 31px;
+        border: 2px solid #00000021
+    }
+    
+    .faq__contact-textarea:focus {
+        border-color: #2A6B9C;
+    }
+    
+    .faq__contact-right {
+        display: flex;
+        flex-direction: column;
+        max-width: 567px;
+        width: 100%;
+    }
+    
+    .faq__contact-input {
+        width: 100%;
+        height: 39px;
+        margin-bottom: 14px;
+        padding-left: 12px;
+        border-radius: 21px;
+        border: 1px solid #0000002B
+    }
+    
+    .faq__contact-input:focus {
+        border-color: #2A6B9C;
+    }
+    
+    .faq__contact-btn {
+        width: 100%;
+        height: 39px;
+        padding: 12px;
+        background: #E87A4A;
+        color: white;
+        border: none;
+        border-radius: 21px;
+        font-size: 14px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: background 0.2s ease;
+    }
+    
+    .faq__contact-btn:hover {
+        background: #D56E3F;
+    }
+    /* ===== consultation ===== */
+    
+    .consultation {
+        padding-top: 35px;
+        flex-direction: column;
+        padding-bottom: 78px;
+        overflow: visible;
+    }
+    
+    .decoration-svg--consultation {
+        position: absolute;
+        top: -155px;
+        left: 0px;
+        width: 1123px;
+        height: 712px;
+        background: url(/assets/img/deco-consultation.svg) no-repeat top left;
+        max-width: 100vw;
+    }
+    
+    .decoration-svg--consultation2 {
+        position: absolute;
+        top: -221px;
+        right: 0px;
+        width: 712px;
+        height: 1123px;
+        background: url(/assets/img/deco-consultation2.svg) no-repeat right;
+        max-width: 100vw;
+        z-index: -1;
+    }
+    
+    .consultation__title {
+        font-family: Gilroy;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 120%;
+        letter-spacing: 0%;
+        text-align: center;
+        text-transform: uppercase;
+        color: #403B36;
+        max-width: 586px;
+        width: 100%;
+        display: flex;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    
+    .consultation__note {
+        padding-top: 30px;
+    }
+    /* .consultation__description,
+    .consultation__note {
+        font-size: 16px;
+        color: #777;
+        line-height: 1.6;
+        margin-bottom: 24px;
+        text-align: center;
+    } */
+    
+    .consultation__options {
+        display: flex;
+        gap: 37px;
+        justify-content: center;
+        margin-bottom: 40px;
+        margin-top: 47px;
+    }
+    
+    .consultation_block_desk_wrapp {
+        max-width: 743px;
+        width: 100%;
+        margin: 0 auto;
+        font-weight: 300;
+        font-style: Light;
+        font-size: 20px;
+        line-height: 120%;
+        letter-spacing: 0%;
+        text-align: center;
+        color: #403B36;
+        margin-top: 21px;
+    }
+    
+    .consultation-option-wrapp {
+        padding: 30px;
+        background-color: #FFFFFF;
+        box-shadow: 0px 0px 9.9px 0px #00000012;
+        border-radius: 29px;
+    }
+    
+    .consultation-option {
+        border-radius: 12px;
+        width: 100%;
+        max-width: 481px;
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        background-color: #F4F4F4;
+        border: 2px solid #FFFFFF;
+        border-top: 0px;
+        border-radius: 40px;
+        margin-top: 0px;
+    }
+    
+    .consultation_block_text h2 {
+        border-top: 2px solid #C5C5C5;
+    }
+    
+    .consultation-option:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+    
+    .consultation-option__title {
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 80%;
+        letter-spacing: 0%;
+        color: #155971;
+    }
+    
+    .consultation-option__info {
+        display: flex;
+        flex-direction: column;
+        margin-top: 22px;
+        margin-bottom: 7px;
+    }
+    
+    .consultation-option__format,
+    .consultation-option__duration {
+        font-weight: 400;
+        font-size: 20px;
+        letter-spacing: 0%;
+        text-align: left;
+        padding: 0;
+    }
+    
+    .consultation-option__format,
+    .consultation-option__duration span {
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 20px;
+        line-height: 162%;
+        letter-spacing: 0%;
+        padding: 0px;
+    }
+    
+    .consultation-option_price_wrapp {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    
+    .consultation-option__price {
+        max-width: 219px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: 0px;
+    }
+    
+    .consultation-option__label {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 162%;
+        letter-spacing: 0%;
+        color: #403B36D4;
+        transform: translateY(10px);
+    }
+    
+    .consultation-option__amount {
+        font-weight: 700;
+        font-style: Bold;
+        font-size: 36px;
+        letter-spacing: 0%;
+        color: #403B36;
+    }
+    
+    .consultation-option__btn {
+        max-width: 180px;
+        height: 35px;
+        width: 100%;
+        background: #E87A4A;
+        color: white;
+        border: none;
+        border-radius: 17px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 700;
+        font-style: Bold;
+        font-size: 14px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+    
+    .consultation-option__btn:hover {
+        background: #D56E3F;
+    }
+    
+    .consultation-option__benefits {
+        font-size: 14px;
+        color: #777;
+        line-height: 1.5;
+        padding-bottom: 27px;
+        padding-left: 25px;
+        padding-right: 5px;
+    }
+    
+    .consultation-option__benefits h4 {
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 20px;
+        line-height: 120%;
+        letter-spacing: 0%;
+        color: #403B36;
+        padding-bottom: 10px;
+        margin-top: 8px;
+    }
+    
+    .consultation-option__benefits ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align: left;
+    }
+    
+    .consultation-option__benefits li {
+        position: relative;
+        padding-left: 24px;
+        margin-bottom: 8px;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 120%;
+        letter-spacing: 0%;
+        color: #403B36;
+    }
+    
+    .consultation-option__benefits li::before {
+        content: '✓';
+        position: absolute;
+        left: 0;
+        color: #E17946;
+        font-weight: bold;
+    }
+    
+    .consultation__footer {
+        max-width: 865px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    .consultation__footer p {
+        font-weight: 300;
+        font-style: Light;
+        font-size: 20px;
+        line-height: 120%;
+        letter-spacing: 0%;
+        text-align: center;
+    }
+    /* ===== about-bali ===== */
+    
+    .about-bali {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 73px;
+    }
+    
+    .about-bali h2 {
+        padding-bottom: 51px;
+        padding-top: 40px;
+        border-top: 2px solid #C5C5C5;
+    }
+    
+    .about-bali__content {
+        max-width: 1130px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        margin: 0 auto;
+        padding-left: 28px;
+    }
+    
+    .about-bali__content p {
+        font-weight: 300;
+        font-style: Light;
+        font-size: 20px;
+        line-height: 120%;
+        letter-spacing: 0%;
+        text-align: center;
+        color: #403B36;
+    }
+    
+    .about-bali>.about-bali__content>p:nth-child(1) {
+        padding-bottom: 10px;
+    }
+    /* ===== canggu ===== */
+    
+    .canggu {
+        position: relative;
+        height: 619px;
+        background: url(/assets/img/ganguu_img.jpg) center / cover no-repeat;
+        display: flex;
+        padding: 0px;
+    }
+    /* Полупрозрачный фон для читаемости текста */
+    
+    .canggu::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+    }
+    
+    .canggu__content {
+        position: relative;
+        z-index: 2;
+        max-width: 1121px;
+        color: white;
+    }
+    
+    .canggu__title {
+        padding-top: 75px;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 120%;
+        letter-spacing: 0%;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+    
+    .canggu__text {
+        padding-top: 27px;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 120%;
+        letter-spacing: 0%;
+        color: #FFFFFF;
+        text-align: left;
+        padding-top: 27px;
+    }
+    
+    .canggu__features {
+        margin: 24px 0;
+        text-align: left;
+    }
+    
+    .canggu__features-title {
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 24px;
+        line-height: 120%;
+        letter-spacing: 0%;
+        color: #FFFFFF;
+    }
+    
+    .canggu__features-list {
+        list-style: disc;
+        padding-left: 32px;
+        font-size: 16px;
+        line-height: 1.6;
+        margin: 0;
+    }
+    
+    .canggu__features-list li {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 120%;
+        letter-spacing: 0%;
+        color: #FFFFFF;
+        text-align: left;
+    }
+    
+    .canggu__actions {
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 60px;
+    }
+    
+    .canggu__btn {
+        padding: 12px 24px;
+        /* border-radius: 6px; */
+        font-size: 14px;
+        font-weight: 500;
+        text-decoration: none;
+        transition: background 0.2s ease;
+        cursor: pointer;
+    }
+    
+    .canggu__btn--primary {
+        background: #E17946;
+        color: white;
+        max-width: 265px;
+        width: 100%;
+        height: 35px;
+        border: 1px solid #E17946;
+        font-weight: 700;
+        font-style: Bold;
+        font-size: 14px;
+        line-height: 85%;
+        letter-spacing: 0%;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        text-align: center;
+        margin-right: 5px;
+        border-radius: 17px;
+    }
+    
+    .canggu__btn--primary:hover {
+        background: #D56E3F;
+    }
+    
+    .canggu__btn--secondary {
+        padding: 0;
+        background: transparent;
+        color: #E17946;
+        text-decoration: none;
+        border-bottom: 1px solid #E17946;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0%;
+        margin-left: 25px;
+        margin-top: 1px;
+        display: inline-block;
+        padding-bottom: 4px;
+        border-radius: none;
+    }
+    
+    .canggu__btn--secondary:hover {
+        background: rgba(255, 255, 255, 0.1);
+    }
+    /* Адаптивность */
+    /* ===== Виллы в Canggu ===== */
+    
+    .villas-canggu {
+        position: relative;
+        padding-bottom: 12px;
+    }
+    
+    .villas-canggu__header {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .villas-canggu h2 {
+        text-align: center;
+        padding-top: 27px;
+        padding-bottom: 28px;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 120%;
+        letter-spacing: 0%;
+        text-align: center;
+        text-transform: uppercase;
+        color: #403B36;
+    }
+    
+    .villas-canggu__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+        margin-bottom: 40px;
+    }
+    
+    .villa-card {
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .villa-card:hover {
+        transform: translateY(-4px);
+    }
+    
+    .villa-card__image {
+        width: 100%;
+        height: 252px;
+        overflow: hidden;
+    }
+    
+    .villa-card__image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    
+    .villa-card__content {
+        padding: 10px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding-top: 8px;
+    }
+    
+    .villa-card__price {
+        font-family: 'Gilroy', Arial, sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        color: #403B36;
+        line-height: 140%;
+        letter-spacing: 0%;
+    }
+    
+    .villa-card__name {
+        font-size: 14px;
+        font-weight: 500;
+        color: #403B36;
+        margin-top: 4px;
+    }
+    
+    .villa-card__description {
+        color: #0000006E;
+        margin-bottom: 16px;
+        text-align: left;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 140%;
+        letter-spacing: 0%;
+        max-width: 322px;
+        width: 100%;
+        padding: 0;
+    }
+    
+    .villa-card__btn {
+        max-width: 87px;
+        width: 100%;
+        height: 29px;
+        border-radius: 23px;
+        font-weight: 700;
+        font-size: 11px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: #FFFFFF;
+        background-color: #B3B3B3;
+        position: absolute;
+        top: 8px;
+        right: 0px;
+    }
+    
+    .villa-card__btn:hover {
+        background: #D56E3F;
+    }
+    
+    .villas-canggu__link {
+        position: absolute;
+        padding: 0;
+        background: transparent;
+        color: white;
+        text-decoration: underline;
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 20px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: #E17946;
+        margin-left: 5px;
+        bottom: 5px;
+    }
+    /* ===== contacts ===== */
+    
+    .contacts {
+        flex-direction: column;
+        position: relative;
+        padding-bottom: 100px;
+        overflow: visible;
+    }
+    
+    .contacts__title {
+        padding-top: 67px;
+        padding-bottom: 26px;
+    }
+    
+    .contacts__content {
+        display: flex;
+        justify-content: center;
+        justify-content: flex-end;
+    }
+    
+    .contacts__info {
+        max-width: 1200px;
+        width: 100%;
+        height: 437px;
+        background-color: #155971;
+        display: flex;
+        justify-content: flex-end;
+        z-index: 10;
+        margin-top: 133px;
+        margin-right: -77px;
+    }
+    
+    .contacts__info_text {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        max-width: 360px;
+        text-align: left;
+        width: 100%;
+        margin-top: 60px;
+        margin-right: 76px;
+    }
+    
+    .contacts__info-title {
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 32px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: left;
+        vertical-align: middle;
+        color: #FFFFFF;
+        padding-bottom: 17px;
+    }
+    
+    .contacts__info-text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        vertical-align: middle;
+        color: #FFFFFFBF;
+        text-align: left;
+        padding: 0;
+    }
+    
+    .contacts__social {
+        display: flex;
+        flex-direction: column;
+        padding-top: 105px;
+    }
+    
+    .contacts__social span {
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: left;
+        vertical-align: middle;
+        color: #FFFFFF;
+        padding-bottom: 22px;
+    }
+    
+    .contacts__sociallink-wrapp {
+        display: flex;
+    }
+    
+    .contacts__social-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 36px;
+        height: 36px;
+        /* background: rgba(255, 255, 255, 0.2); */
+        border-radius: 50%;
+        transition: background 0.2s ease;
+        margin-right: 23px;
+    }
+    
+    .contacts__social-link:hover {
+        background: rgba(255, 255, 255, 0.3);
+    }
+    
+    .contacts__social-link svg {
+        width: 32px;
+        height: 32px;
+        fill: white;
+    }
+    
+    .contacts-form-wrapp {
+        position: relative;
+        max-width: 588px;
+        height: 689px;
+        width: 100%;
+        background: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        margin-right: 222px;
+        z-index: 2;
+    }
+    
+    .contacts__content::after {
+        content: '';
+        position: absolute;
+        right: 0px;
+        top: 185px;
+        display: flex;
+        height: 437px;
+        background-color: #155971;
+        width: 350px;
+        z-index: -2;
+    }
+    
+    .contacts__form {
+        padding-top: 50px;
+        border-radius: 12px;
+        width: 100%;
+        max-width: 364px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contacts__form-title {
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 32px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        vertical-align: middle;
+        color: #403B36;
+        padding-bottom: 35px;
+    }
+    
+    .contacts__form-group {
+        height: 65px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 15px;
+        border-radius: 25px;
+        width: 100%;
+    }
+    
+    .contacts__form-label {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        vertical-align: middle;
+        color: #403B36;
+        padding-bottom: 10px;
+    }
+    
+    .contacts__form-input,
+    .contacts__form-textarea {
+        width: 100%;
+        height: 39px;
+        border: 1px solid #0000002B;
+        border-radius: 6px;
+        font-size: 14px;
+        color: #403B36;
+        outline: none;
+        transition: border 0.2s ease;
+        border-radius: 25px;
+    }
+    
+    .contacts__form-input:focus,
+    .contacts__form-textarea:focus {
+        border-color: #2A6B9C;
+    }
+    
+    .contacts__form-group.textarea {
+        max-width: 360px;
+        width: 100%;
+        height: 187px;
+    }
+    
+    .contacts__form-group.textarea textarea {
+        height: 100%;
+    }
+    
+    .contacts__form-group.textarea textarea::placeholder {
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+    
+    .contacts__form-btn {
+        max-width: 180px;
+        margin-top: 35px;
+        width: 100%;
+        height: 35px;
+        color: white;
+        border: none;
+        border-radius: 17px;
+        font-size: 14px;
+        font-weight: 500;
+        background-color: #E17946;
+        cursor: pointer;
+        transition: background 0.2s ease;
+    }
+    
+    .contacts__form-btn:hover {
+        background: #D56E3F;
+    }
+    
+    .contacts__form-consent {
+        padding-top: 10px;
+    }
+    
+    .contacts__form-consent-checkbox {
+        position: absolute;
+        opacity: 0;
+    }
+    
+    .contacts__form-consent-label {
+        display: inline-block;
+        position: relative;
+        padding-left: 28px;
+        cursor: pointer;
+    }
+    
+    .contacts__form-consent-label::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 2px;
+        width: 18px;
+        height: 18px;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+    }
+    
+    .contacts__form-consent-label::after {
+        content: '';
+        position: absolute;
+        left: 6px;
+        top: 5px;
+        width: 6px;
+        height: 10px;
+        border: solid #E17946;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+        opacity: 0;
+    }
+    
+    .contacts__form-consent-checkbox:checked+.contacts__form-consent-label::before {
+        border-color: #E17946;
+    }
+    
+    .contacts__form-consent-checkbox:checked+.contacts__form-consent-label::after {
+        opacity: 1;
+    }
+    
+    .contacts__form-footer {
+        text-align: center;
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 14px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        vertical-align: middle;
+        color: #433D38;
+    }
+    
+    .contacts__form-consent-text {
+        font-size: 12px;
+        line-height: 8px;
+    }
+    
+    .contacts__form-consent-text a {
+        color: #E17946;
+        font-size: 12px;
+        line-height: 8px;
+    }
+    
+    .contacts__form-link {
+        color: #2A6B9C;
+        font-weight: 500;
+        text-decoration: underline;
+        text-underline-offset: 4px;
+        transition: color 0.2s ease;
+    }
+    
+    .contacts__form-link:hover {
+        color: #1e557a;
+    }
+    /* ===== footer ===== */
+    
+    .section-footer {
+        overflow: visible;
+    }
+    
+    .decoration-svg--footer {
+        position: absolute;
+        margin: 0;
+        top: -486px;
+        right: 0%;
+        transform: rotate(1deg);
+        width: 1105px;
+        height: 863px;
+        background: url(/assets/img/deco-footer.svg) no-repeat top center;
+        background-size: contain;
+        max-width: 100vw;
+        right: 7%;
+        z-index: -1;
+    }
+    
+    .footer {
+        padding: 60px 0 40px;
+        position: relative;
+    }
+    
+    .footer__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 35px;
+        height: 120px;
+        margin-bottom: 95px;
+    }
+    
+    .footer__logo img {
+        width: 68px;
+        height: 57px;
+        margin-bottom: 35px;
+    }
+    
+    .footer__kibarer-logo img {
+        width: 97px;
+        height: 52px;
+        margin-bottom: 35px;
+    }
+    
+    .footer__back-to-top {
+        max-width: 304px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: transparent;
+        align-items: center;
+    }
+    
+    .footer__back-to-top p {
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        vertical-align: middle;
+        color: #433D38;
+    }
+    
+    .footer__back-to-top img {
+        max-width: 20px;
+        width: 100%;
+        height: 20px;
+    }
+    /* .footer__back-to-top:hover {
+        color: #2A6B9C;
+    } */
+    
+    .footer__bottom {
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+    }
+    
+    .footer__news {
+        max-width: 410px;
+        width: 100%;
+        margin-left: 102px;
+    }
+    
+    .footer__news-title {
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 20px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        vertical-align: middle;
+        padding-bottom: 10px;
+    }
+    
+    .footer__news-text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        vertical-align: middle;
+        color: #433D38BD;
+        text-align: left;
+        padding: 0;
+        padding-bottom: 22px;
+    }
+    
+    .footer__subscribe-form {
+        display: flex;
+        gap: 8px;
+    }
+    
+    .footer__subscribe-input {
+        flex-grow: 1;
+        padding: 8px 12px;
+        border: 1px solid #ddd;
+        border-radius: 25px;
+        font-size: 14px;
+        color: #403B36;
+        outline: none;
+        transition: border 0.2s ease;
+    }
+    
+    .footer__subscribe-input:focus {
+        border-color: #2A6B9C;
+    }
+    
+    .footer__subscribe-btn {
+        background: #E87A4A;
+        color: white;
+        border: none;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+        padding: 8px 12px;
+        font-size: 14px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: background 0.2s ease;
+        transform: translateX(-30px);
+    }
+    
+    .footer__bottom_right_block {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-right: 101px;
+    }
+    
+    .footer__subscribe-btn:hover {
+        background: #D56E3F;
+    }
+    
+    .footer__links-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .footer__links-list.faq-villas li {
+        padding-left: 45px;
+        padding-bottom: 20px;
+    }
+    
+    .footer__links-list li a {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        vertical-align: middle;
+        color: #433D38;
+    }
+    
+    .footer__links-list a {
+        color: #403B36;
+        font-size: 14px;
+        text-decoration: none;
+        transition: color 0.2s ease;
+    }
+    
+    .footer__links-list a:hover {
+        color: #2A6B9C;
+    }
+    
+    .footer__social-icons {
+        display: flex;
+        gap: 22px;
+    }
+    
+    .footer__social {
+        margin-top: 15px;
+        margin-right: 15px;
+    }
+    
+    .footer__social-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 36px;
+        height: 36px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 50%;
+        transition: background 0.2s ease;
+    }
+    
+    .footer__social-link:hover {
+        background: rgba(255, 255, 255, 0.3);
+    }
+    
+    @media(min-width:1500px) {
+        .contacts__info {
+            justify-content: center;
+        }
+    }
+    
+    @media(max-width:1300px) {
+        .faq__content {
+            flex-direction: column;
+        }
+        .faq__categories {
+            display: flex;
+            flex-direction: row;
+            max-width: 927px;
+            width: 100%;
+            justify-content: space-around;
+            margin-bottom: 10px;
+        }
+        .faq__contact {
+            position: absolute;
+            bottom: 0%;
+            left: 50%;
+            transform: translate(-50%, 50%);
+        }
+        .contacts__info {
+            justify-content: center;
+        }
+        .contacts-form-wrapp {
+            margin-right: 0px;
+        }
+        .contacts__content::after {
+            display: none;
+        }
+    }
+    
+    @media (max-width:1250px) {
+        .wrapp.wrapp-inro {
+            padding: 0;
+        }
+        .about-me-text-deskription-text {
+            max-width: 49%;
+            width: 100%;
+            height: auto;
+        }
+        .about-me-image-desktop {
+            max-width: 49%;
+            height: auto;
+        }
+        .about-me-text h3 {
+            font-size: 32px;
+        }
+    }
+    
+    @media (max-width: 1200px) {
+        header {
+            width: 98%;
+            margin: 0 auto;
+        }
+        .news__row,
+        .news__row--bottom {
+            flex-direction: column;
+            gap: 24px;
+        }
+        .news__featured,
+        .news__latest {
+            width: 100%;
+            max-width: 100%;
+        }
+        .news__text-block,
+        .news__subscribe {
+            width: 100%;
+            max-width: 100%;
+        }
+        .testimonials {
+            padding-top: 40px;
+        }
+        .canggu__text {
+            padding-left: 0;
+        }
+    }
+    
+    @media(max-width:1180px) {
+        .section-stats-line {
+            padding: 40px 20px;
+        }
+        .stats-line__dot {
+            display: none;
+        }
+        .stats-line::after {
+            max-width: 100%;
+            width: 100%;
+            left: 0;
+        }
+        .consultation-option__amount {
+            font-size: 32px;
+        }
+    }
+    
+    @media (max-width: 992px) {
+        .about-me-me {
+            height: auto;
+            padding: 60px 20px;
+        }
+        .about-me-content {
+            flex-direction: column;
+            gap: 40px;
+            height: auto;
+        }
+        .about-me-text {
+            max-width: 100%;
+        }
+        .about-me-image-desktop {
+            display: none;
+        }
+        .about-me-image-mob {
+            display: flex;
+            justify-content: center;
+        }
+        .about-me-text::after {
+            display: none;
+        }
+        .about-me-text-deskription {
+            flex-direction: column;
+        }
+        .about-me-text-deskription-text {
+            max-width: 99%;
+        }
+        .about-me-text-title {
+            text-align: center;
+        }
+        .section-stats-line {
+            padding: 0;
+            height: auto;
+        }
+        .stats-line {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            height: auto;
+            padding-bottom: 30px;
+            gap: 40px;
+        }
+        .projects__grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .root-projects__grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .consultation__options {
+            flex-direction: column;
+            gap: 24px;
+        }
+        .consultation-option {
+            max-width: 100%;
+        }
+        .villas-canggu__grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .contacts__content {
+            flex-direction: column-reverse;
+        }
+        .contacts__info {
+            max-width: 100%;
+            margin: 0;
+            height: auto;
+        }
+        .contacts-form-wrapp {
+            margin: 0 auto;
+            max-width: 100%;
+        }
+        .contacts__info_text {
+            max-width: 560px;
+            margin: 0;
+        }
+        .contacts__social {
+            padding-top: 0px;
+        }
+        .contacts__info-text {
+            text-align: center;
+            padding-bottom: 10px;
+        }
+        .contacts__info-title {
+            text-align: center;
+        }
+        .contacts__info-text-wrapp {
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 20px;
+            align-items: center;
+        }
+        .contacts__social span {
+            text-align: center;
+        }
+        .contacts__info-title {
+            padding-top: 20px;
+        }
+        .contacts {
+            padding-bottom: 40px;
+        }
+        .faq__content {
+            flex-direction: column;
+            gap: 24px;
+        }
+        .faq__categories {
+            width: 100%;
+        }
+        .faq__contact-right {
+            width: 100%;
+        }
+        textarea::placeholder {
+            padding-left: 20px;
+        }
+        .villas-canggu-wrapp {
+            width: 100%;
+        }
+        .contacts-form-wrapp {
+            padding: 0 10px;
+        }
+        .footer__bottom {
+            gap: 0px;
+        }
+        .footer__news {
+            margin-left: 0px;
+        }
+        .footer__bottom_right_block {
+            margin-right: 0px;
+        }
+        .footer {
+            padding-top: 0;
+        }
+    }
+    
+    @media(max-width:880px) {
+        .top-title {
+            max-width: 640px;
+            margin: 0 auto;
+        }
+        .menu-top {
+            max-width: 592px;
+            width: 100%;
+            margin: 0 auto;
+            margin-top: 50px;
+        }
+        .faq-question__header span {
+            font-size: 18px;
+            padding-left: 0px;
+        }
+        .faq-category {
+            font-size: 20px;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        header {
+            width: 94%;
+        }
+        .project-title {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 16px;
+        }
+        .projects__link {
+            padding-top: 0px;
+            padding-bottom: 40px;
+        }
+        .projects {
+            padding-bottom: 0px;
+            border-bottom: 2px solid #C5C5C5;
+        }
+        .root-projects__grid {
+            grid-template-columns: 1fr;
+        }
+        .project-card__image-slider {
+            height: 200px;
+        }
+        .root-projects__header {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 16px;
+            padding-top: 40px;
+        }
+        .root-projects__link {
+            align-self: flex-start;
+            padding-bottom: 40px;
+        }
+        .projects__grid {
+            grid-template-columns: 1fr;
+        }
+        .project-card__image {
+            height: 200px;
+        }
+        .projects__footer {
+            text-align: center;
+        }
+        .root-projects__grid {
+            grid-template-columns: 1fr;
+        }
+        .root-project-card {
+            height: auto;
+        }
+        .root-project-card__image-slider {
+            height: 300px;
+        }
+        .faq {
+            margin-bottom: 225px;
+        }
+        .consultation {
+            padding: 0px 0px;
+        }
+        .consultation_block_text h2 {
+            padding-top: 40px;
+        }
+        .consultation__title {
+            font-size: 20px;
+        }
+        .consultation__description,
+        .consultation__note {
+            font-size: 14px;
+        }
+        .consultation-option__title {
+            font-size: 18px;
+        }
+        .consultation-option__amount {
+            font-size: 20px;
+        }
+        .consultation-option__benefits li {
+            font-size: 14px;
+        }
+        .consultation__footer {
+            padding-bottom: 40px;
+        }
+        .canggu__actions {
+            padding-bottom: 40px;
+        }
+        .testimonials__slider {
+            padding: 24px;
+            max-width: 100%;
+            padding-bottom: 0;
+            padding: 0;
+        }
+        .testimonial-quote {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        .testimonial-author {
+            font-size: 28px;
+        }
+        .testimonials__nav {
+            gap: 12px;
+        }
+        .faq__contact-form {
+            flex-direction: column;
+            align-items: center;
+        }
+        .faq__contact-right {
+            max-width: 608px;
+        }
+        .about-bali {
+            padding: 0px 0px;
+        }
+        .about-me {
+            margin-bottom: 20px;
+        }
+        .projects {
+            margin-top: 20px;
+        }
+        .root-projects__title {
+            padding-top: 0px;
+        }
+        .news {
+            margin-top: 0;
+            padding-bottom: 10px;
+        }
+        .news__title {
+            margin-bottom: 70px;
+            padding-top: 40px;
+        }
+        .testimonials__title {
+            padding-top: 0px;
+        }
+        .testimonials {
+            padding-top: 40px;
+        }
+        .about-bali__content {
+            max-width: 100%;
+            padding: 20px;
+            min-height: auto;
+            text-align: left;
+            display: block;
+        }
+        .canggu {
+            height: auto;
+            padding: 0px;
+            padding-top: 40px;
+            text-align: center;
+        }
+        .canggu__content {
+            max-width: 100%;
+            padding: 0px;
+            margin: 0 auto;
+        }
+        .canggu__features-title {
+            font-size: 20px;
+        }
+        .canggu__text {
+            font-size: 14px;
+        }
+        .canggu__features-list li {
+            font-size: 20px;
+        }
+        .villas-canggu__grid {
+            grid-template-columns: 1fr;
+        }
+        .villa-card__image {
+            height: 200px;
+        }
+        .about-bali__content {
+            padding: 0px;
+        }
+        .canggu__title {
+            padding-top: 0px;
+            font-size: 24px;
+        }
+        .villas-canggu h2 {
+            font-size: 24px;
+        }
+        .contacts__title {
+            padding-top: 40px;
+        }
+        .contacts__info-title {
+            font-size: 28px;
+        }
+        .footer__links-list li a {
+            text-align: right;
+            font-size: 18px;
+        }
+        .footer__news {
+            max-width: 320px;
+            width: 100%;
+        }
+        .footer__top {
+            padding-top: 0;
+            margin-bottom: 40px;
+            max-width: 350px;
+        }
+        .footer__back-to-top img {
+            margin-top: 6px;
+        }
+        .footer {
+            padding: 0;
+        }
+        .footer__back-to-top {
+            position: absolute;
+            right: 0px;
+            order: 1;
+            width: 35px;
+            height: 35px;
+            border-radius: 50px;
+            border: 1px solid #000;
+        }
+        .footer__logo {
+            order: 2;
+        }
+        .footer__kibarer-logo {
+            order: 3;
+        }
+        .footer__back-to-top p {
+            display: none;
+        }
+        .section-footer {
+            padding-bottom: 40px;
+        }
+        .footer__links-list.faq-villas li {
+            padding: 0;
+        }
+        .decoration-svg--footer {
+            top: -259px;
+            height: 540px;
+            right: 2%;
+        }
+    }
+    
+    @media(max-width:680px) {
+        .menu-top {
+            display: none;
+        }
+        .intro h2 {
+            font-size: 38px;
+        }
+        .intro {
+            height: 325px;
+        }
+        .intro p {
+            margin-bottom: 20px;
+        }
+        .intro-text {
+            padding-top: 80px;
+        }
+        .stats-line {
+            grid-template-columns: 1fr;
+        }
+        .intro .intro-text button {
+            margin-top: 15px;
+        }
+        .faq__categories {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            max-width: 100%;
+            width: 100%;
+            margin: 0 auto;
+            justify-items: center;
+        }
+        .about-bali {
+            margin-bottom: 40px;
+        }
+        .canggu {
+            padding-bottom: 40px;
+        }
+        .canggu__features-list li {
+            font-size: 18px;
+        }
+        .canggu__actions {
+            flex-direction: column-reverse;
+            align-items: center;
+            padding-bottom: 0px;
+        }
+        .canggu__btn--secondary {
+            margin: 0;
+            margin-bottom: 10px;
+        }
+        .footer__bottom {
+            flex-direction: column;
+            position: relative;
+            height: 207px;
+        }
+        .footer__links {
+            margin-top: 20px;
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+        }
+        .footer__social {
+            max-width: 40px;
+            width: 100%;
+            display: flex;
+            margin: 0;
+            justify-content: center;
+            position: absolute;
+            right: 0px;
+            top: 0;
+        }
+        .footer__social-icons {
+            flex-direction: column;
+        }
+        .footer__links-list.faq-villas {
+            width: 110px;
+            justify-content: space-between;
+            margin-right: 20px;
+        }
+    }
+    
+    @media(max-width:600px) {
+        .intro {
+            height: 460px;
+        }
+        .intro p {
+            margin-bottom: 50px;
+        }
+        .search-bar {
+            width: 98%;
+        }
+    }
+    
+    @media(max-width:560px) {
+        .intro p {
+            max-width: 415px;
+            width: 100%;
+        }
+        .about-me-text {
+            margin-top: 25px;
+        }
+        .read-more {
+            padding-bottom: 25px;
+        }
+        .canggu__features-list {
+            padding-left: 25px;
+            padding-top: 10px;
+        }
+    }
+    
+    @media(max-width:480px) {
+        .top-title {
+            padding-top: 25px;
+        }
+        .intro p br {
+            display: none;
+        }
+        .intro p {
+            font-size: 12px;
+        }
+        .search-field-btn {
+            flex-direction: column;
+        }
+        .intro .intro-text button {
+            margin-top: 40px;
+        }
+        .search-bar {
+            width: 100%;
+            border-radius: 0px;
+            height: auto;
+        }
+        .search-field {
+            padding: 0 0 0 0;
+        }
+        .results-btn {
+            font-size: 12px;
+        }
+        .filters-btn {
+            font-size: 12px;
+        }
+        .custom-select {
+            font-size: 12px;
+        }
+        .about-me-text h3 {
+            font-size: 28px;
+        }
+        .read-more {
+            display: inline-block;
+            color: #E87A4A;
+            font-size: 16px;
+        }
+        .projects__link {
+            padding-top: 0px;
+        }
+        .projects {
+            padding-bottom: 25px;
+        }
+        .projects__grid {
+            margin-bottom: 0px;
+        }
+        .news__title {
+            margin-bottom: 40px;
+        }
+        .news__text-block {
+            padding: 15px 15px;
+        }
+        .news__subscribe-text {
+            padding-top: 15px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .faq-question__header span {
+            font-size: 16px;
+            padding-left: 0px;
+            padding-right: 10px;
+            text-align: left;
+        }
+        .faq-question__answer {
+            font-size: 14px;
+        }
+        .faq-question__answer.show {
+            padding: 20px;
+        }
+        .consultation-option__format,
+        .consultation-option__duration span {
+            font-size: 18px;
+            line-height: 144%;
+        }
+        .consultation-option__title {
+            font-size: 14px;
+            text-align: left;
+        }
+        .consultation-option__duration {
+            font-size: 18px;
+            line-height: 144%;
+        }
+        .consultation-option__amount {
+            font-size: 18px;
+        }
+        .consultation__footer p {
+            font-size: 18px;
+        }
+        .consultation-option__label {
+            line-height: 36px;
+        }
+        .about-bali__content p {
+            font-size: 18px;
+        }
+        .canggu__features-title {
+            font-size: 18px;
+        }
+        .testimonials__title {
+            font-size: 18px;
+        }
+        .about-bali {
+            padding: 0;
+        }
+        .about-bali h2 {
+            padding-bottom: 26px;
+        }
+        .canggu__title {
+            font-size: 20px;
+        }
+        .villas-canggu h2 {
+            font-size: 20px;
+        }
+        .contacts__form-title {
+            font-size: 24px;
+            padding-bottom: 10px;
+        }
+        .contacts__form {
+            padding-top: 40px;
+        }
+        .footer__links-list li a {
+            text-align: right;
+            font-size: 14px;
+        }
+        .footer__links {
+            width: 100%;
+        }
+        .footer__back-to-top {
+            top: 100px;
+        }
+        .footer__top {
+            max-width: 100%;
+        }
+        .footer__bottom {
+            flex-direction: column;
+            position: relative;
+            height: 207px;
+        }
+        .decoration-svg--footer {
+            top: 0;
+            height: 320px;
+            width: 364px;
+            right: auto;
+            left: 0%;
+        }
+    }
+    
+    @media(max-width:390px) {
+        .intro h2 {
+            font-size: 34px;
+        }
+        .consultation-option__duration {
+            font-size: 14px;
+        }
+        .consultation-option__format,
+        .consultation-option__duration span {
+            font-size: 14px;
+        }
+        .consultation-option__benefits h4 {
+            font-size: 16px;
+        }
+        .consultation-option__benefits li {
+            font-size: 12px;
+        }
+        .canggu__features-title {
+            font-size: 16px;
+        }
+        .footer__links {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .footer__links-list.faq-villas {
+            margin-bottom: 10px;
+        }
+        .footer__news-text {
+            font-size: 12px;
+            padding-bottom: 15px;
+        }
+    }
+    
+    @media(max-width:375px) {
+        .intro p {
+            font-size: 11px;
+        }
+        .intro h2 {
+            font-size: 32px;
+        }
+        .faq-question__header span {
+            font-size: 14px;
+        }
+        .faq-question__answer {
+            font-size: 12px;
+        }
+        .consultation-option__format,
+        .consultation-option__duration span {
+            font-size: 12px;
+        }
+        .about-bali__content p {
+            font-size: 16px;
+        }
+        .consultation__footer p {
+            font-size: 16px;
+        }
+        .footer__links {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .section-footer {
+            padding-bottom: 20px;
+        }
+        .footer__links-list.faq-villas {
+            margin-bottom: 10px;
+        }
+        .footer__social {
+            bottom: 0;
+        }
+        .footer__news {
+            max-width: 250px;
+        }
+        .footer__subscribe-btn {
+            padding: 4px 7px;
+            font-size: 6px;
+        }
+    }
