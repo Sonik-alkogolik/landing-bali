@@ -688,14 +688,14 @@
         left: 78px;
         right: 0;
         height: 1px;
-        background: rgba(255, 255, 255, 0.3);
+        background: #D9C6A5;
         z-index: 2;
     }
     
     .stats-line__dot {
         width: 15px;
         height: 15px;
-        background: #FFFFFF;
+        background: #D9C6A5;
         border-radius: 50%;
         /* margin-top: 16px; */
         position: relative;
