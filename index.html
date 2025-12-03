@@ -10,8 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/main.css">
-    <!-- <link rel="stylesheet" href="/assets/css/media.css"> -->
-    <script src="/assets/js/index.js"></script>
+    <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css">
+
     <title>Bali</title>
 </head>
 
@@ -255,67 +255,84 @@
             <div class="root-projects__grid">
 
                 <article class="root-project-card">
-                    <div class="root-project-card__image-slider">
-                        <div class="root-slider-container">
-                            <img src="/assets/img/root-project1.jpg" alt="ROOT 1 Bumbak" class="root-slide active">
-                            <img src="/assets/img/root-project2.jpg" alt="ROOT 1 Bumbak" class="root-slide">
-                            <img src="/assets/img/root-project3.jpg" alt="ROOT 1 Bumbak" class="root-slide">
+                    <div class="root-project-card__image-slider swiper">
+                        <!-- Слайдер контейнер -->
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="/assets/img/root-project1.jpg" alt="ROOT 1 Bumbak">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/assets/img/root-project2.jpg" alt="ROOT 1 Bumbak">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/assets/img/root-project3.jpg" alt="ROOT 1 Bumbak">
+                            </div>
                         </div>
 
-                        <div class="root-slider-dots">
-                            <span class="root-dot active" data-index="0"></span>
-                            <span class="root-dot" data-index="1"></span>
-                            <span class="root-dot" data-index="2"></span>
-                        </div>
-                        <span class="root-project-card__tag">подробнее</span>
+                        <!-- Точки (pagination) -->
+                        <div class="swiper-pagination"></div>
+
+                        <!-- Тег "подробнее" -->
+                        <a href="" class="root-project-card__tag">подробнее</a>
                     </div>
+
                     <div class="root-project-card__content">
                         <h3 class="root-project-card__name">ROOT 1 Bumbak</h3>
                         <p class="root-project-card__description">Комплекс из 16 современных вилл в центральном Умаласе с панорамным видом на рисовые террасы и джунгли.</p>
                         <span class="root-project-card__price">от $250,000</span>
                     </div>
                 </article>
+
                 <article class="root-project-card">
-                    <div class="root-project-card__image-slider">
-                        <div class="root-slider-container">
-                            <img src="/assets/img/root-project1.jpg" alt="ROOT 2 Umalas 2 Luxury Collection" class="root-slide active">
-                            <img src="/assets/img/root-project2.jpg" alt="ROOT 2 Umalas 2 Luxury Collection" class="root-slide">
-                            <img src="/assets/img/root-project3.jpg" alt="ROOT 2 Umalas 2 Luxury Collection" class="root-slide">
+                    <div class="root-project-card__image-slider swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="/assets/img/root-project1.jpg" alt="ROOT 2 Umalas 2 Luxury Collection">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/assets/img/root-project2.jpg" alt="ROOT 2 Umalas 2 Luxury Collection">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/assets/img/root-project3.jpg" alt="ROOT 2 Umalas 2 Luxury Collection">
+                            </div>
                         </div>
 
-                        <div class="root-slider-dots">
-                            <span class="root-dot active" data-index="0"></span>
-                            <span class="root-dot" data-index="1"></span>
-                            <span class="root-dot" data-index="2"></span>
-                        </div>
-                        <span class="root-project-card__tag">подробнее</span>
+                        <div class="swiper-pagination"></div>
+                        <a href="" class="root-project-card__tag">подробнее</a>
                     </div>
+
                     <div class="root-project-card__content">
                         <h3 class="root-project-card__name">ROOT 2 Umalas 2 Luxury Collection</h3>
                         <p class="root-project-card__description">Комплекс из 8 премиальных вилл в центральном Умаласе с дизайном от известных архитекторов.</p>
                         <span class="root-project-card__price">от $275,000</span>
                     </div>
                 </article>
+
                 <article class="root-project-card">
-                    <div class="root-project-card__image-slider">
-                        <div class="root-slider-container">
-                            <img src="/assets/img/root-project1.jpg" alt="ROOT 3 Mediterranean" class="root-slide active">
-                            <img src="/assets/img/root-project2.jpg" alt="ROOT 3 Mediterranean" class="root-slide">
-                            <img src="/assets/img/root-project3.jpg" alt="ROOT 3 Mediterranean" class="root-slide">
+                    <div class="root-project-card__image-slider swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="/assets/img/root-project1.jpg" alt="ROOT 3 Mediterranean">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/assets/img/root-project2.jpg" alt="ROOT 3 Mediterranean">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/assets/img/root-project3.jpg" alt="ROOT 3 Mediterranean">
+                            </div>
                         </div>
-                        <div class="root-slider-dots">
-                            <span class="root-dot active" data-index="0"></span>
-                            <span class="root-dot" data-index="1"></span>
-                            <span class="root-dot" data-index="2"></span>
-                        </div>
-                        <span class="root-project-card__tag">подробнее</span>
+
+                        <div class="swiper-pagination"></div>
+                        <a href="" class="root-project-card__tag">подробнее</a>
                     </div>
+
                     <div class="root-project-card__content">
                         <h3 class="root-project-card__name">ROOT 3 Mediterranean</h3>
                         <p class="root-project-card__description">4 премиальные виллы в центральном Умаласе, выполненные в средиземноморском стиле.</p>
                         <span class="root-project-card__price">от $310,000</span>
                     </div>
                 </article>
+
             </div>
         </div>
     </section>
@@ -324,7 +341,7 @@
         <div class="container">
             <h2 class="news__title">НОВОСТИ</h2>
             <div class="news__row">
-                <a class="news__featured">
+                <a href="" class="news__featured">
                     <img src="/assets/img/news_icon.jpg" alt="Самые свежие проекты от Kibarer" class="news__featured-image">
                     <div class="news__featured-caption">Самые свежие проекты от Kibarer</div>
                 </a>
@@ -347,7 +364,7 @@
                     </form>
                 </div>
 
-                <a class="news__latest">
+                <a href="" class="news__latest">
                     <img src="/assets/img/news_icon2.jpg" alt="Последние новости" class="news__latest-image">
                     <div class="news__latest-content news__featured-caption">
                         <h3>Последние новости</h3>
@@ -1039,6 +1056,11 @@
         </div>
         <div class="decoration-svg decoration-svg--footer"></div>
     </section>
+
+
+    <script src="/assets/js/index.js"></script>
+    <script src="/assets/js/swiper-min.js"></script>
+    <script src="/assets/js/main-swiper.js"></script>
 </body>
 
 </html>

@@ -1,278 +1,290 @@
-    *,
-    *::before,
-    *::after {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        margin: 0;
-        padding: 0;
-    }
-    /* Gilroy — Regular */
-    
-    @font-face {
-        font-family: 'Gilroy';
-        src: url('../fonts/Gilroy-Regular.woff2') format('woff2');
-        font-weight: 400;
-        font-style: normal;
-        font-display: swap;
-    }
-    /* Gilroy — Regular Italic */
-    
-    @font-face {
-        font-family: 'Gilroy';
-        src: url('../fonts/Gilroy-RegularItalic.woff2') format('woff2');
-        font-weight: 400;
-        font-style: italic;
-        font-display: swap;
-    }
-    /* Gilroy — Medium */
-    
-    @font-face {
-        font-family: 'Gilroy';
-        src: url('../fonts/Gilroy-Medium.woff2') format('woff2');
-        font-weight: 500;
-        font-style: normal;
-        font-display: swap;
-    }
-    /* Gilroy — Medium Italic */
-    
-    @font-face {
-        font-family: 'Gilroy';
-        src: url('../fonts/Gilroy-MediumItalic.woff2') format('woff2');
-        font-weight: 500;
-        font-style: italic;
-        font-display: swap;
-    }
-    /* Gilroy — Bold */
-    
-    @font-face {
-        font-family: 'Gilroy';
-        src: url('../fonts/Gilroy-Bold.woff2') format('woff2');
-        font-weight: 700;
-        font-style: normal;
-        font-display: swap;
-    }
-    
-    @font-face {
-        font-family: 'Betmo';
-        src: url('../fonts/Betmo-Regular-Cyr.otf') format('opentype');
-        font-weight: normal;
-        font-style: normal;
-    }
-    
-    body {
-        background-color: #FAF7F2;
-        font-family: Gilroy;
-    }
-    
-    ul,
-    ol,
-    a,
-    p {
-        text-decoration: none;
-        margin: 0;
-        padding: 0;
-        list-style: none;
-    }
-    
-    button {
-        border: none;
-        cursor: pointer;
-    }
-    
-    ul {
-        font-family: Gilroy;
-        font-weight: 600;
-        font-style: SemiBold;
-        font-size: 16.9px;
-        line-height: 100%;
-        letter-spacing: 0%;
-        text-align: center;
-    }
-    
-    h1 {
-        font-family: Gilroy;
-        font-weight: 700;
-        font-style: Bold;
-        font-size: 32px;
-        line-height: 100%;
-        letter-spacing: 0%;
-        text-align: center;
-        color: #403B36;
-    }
-    
-    h2 {
-        /* font-family: Gilroy;
-        font-weight: 700;
-        font-style: Bold;
-        font-size: 24px;
-        line-height: 100%;
-        letter-spacing: 0%;
-        text-align: center; */
-        font-weight: 700;
-        font-style: Bold;
-        font-size: 24px;
-        line-height: 100%;
-        letter-spacing: 0%;
-        text-align: left;
-        /* padding-top: 39px; */
-    }
-    
-    h3 {
-        font-family: Gilroy;
-        font-weight: 700;
-        font-style: Bold;
-        font-size: 28px;
-        line-height: 150%;
-        letter-spacing: 0%;
-    }
-    
-    p {
-        font-family: Gilroy;
-        font-weight: 300;
-        font-style: Light;
-        font-size: 20px;
-        line-height: 100%;
-        letter-spacing: 0%;
-        text-align: center;
-        color: #403B36;
-        padding: 5px;
-    }
-    
-    input {
-        outline: none;
-        resize: none;
-        font-weight: 400;
-        font-style: Regular;
-        font-size: 20px;
-        line-height: 100%;
-        letter-spacing: 0%;
-        vertical-align: middle;
-        color: #403B367A;
-    }
-    
-    input::placeholder {
-        padding-left: 12px;
-        padding-top: 12px;
-    }
-    
-    textarea {
-        outline: none;
-        resize: none;
-        font-weight: 400;
-        font-style: Regular;
-        font-size: 20px;
-        line-height: 100%;
-        letter-spacing: 0%;
-        vertical-align: middle;
-        color: #403B367A;
-    }
-    
-    textarea::placeholder {
-        padding-left: 47px;
-        padding-top: 29px;
-    }
-    
-    img {
-        max-width: 100%;
-        display: flex;
-    }
-    
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Gilroy — Regular */
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/* Gilroy — Regular Italic */
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-RegularItalic.woff2') format('woff2');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+/* Gilroy — Medium */
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/* Gilroy — Medium Italic */
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-MediumItalic.woff2') format('woff2');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+/* Gilroy — Bold */
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Betmo';
+    src: url('../fonts/Betmo-Regular-Cyr.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #FAF7F2;
+    font-family: Gilroy;
+}
+
+ul,
+ol,
+a,
+p {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+ul {
+    font-family: Gilroy;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 16.9px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+h1 {
+    font-family: Gilroy;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #403B36;
+}
+
+h2 {
+    /* font-family: Gilroy;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center; */
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: left;
+    /* padding-top: 39px; */
+}
+
+h3 {
+    font-family: Gilroy;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 28px;
+    line-height: 150%;
+    letter-spacing: 0%;
+}
+
+p {
+    font-family: Gilroy;
+    font-weight: 300;
+    font-style: Light;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #403B36;
+    padding: 5px;
+}
+
+input {
+    outline: none;
+    resize: none;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #403B367A;
+}
+
+input::placeholder {
+    padding-left: 12px;
+    padding-top: 12px;
+}
+
+textarea {
+    outline: none;
+    resize: none;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #403B367A;
+}
+
+textarea::placeholder {
+    padding-left: 47px;
+    padding-top: 29px;
+}
+
+img {
+    max-width: 100%;
+    display: flex;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1440px;
+    width: 100%;
+    padding: 0 120px;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.wrapp {
+    max-width: 1200px;
+    width: 100%;
+}
+
+.watch_all {
+    font-family: Gilroy;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    border-bottom: 2px solid #E17946
+}
+
+@media(max-width:1300px) {
     .container {
-        margin: 0 auto;
-        max-width: 1440px;
-        width: 100%;
-        padding: 0 120px;
+        padding: 0 10px;
     }
-    
-    section {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        overflow: hidden;
-        position: relative;
-    }
-    
     .wrapp {
-        max-width: 1200px;
-        width: 100%;
+        max-width: 100%;
+        padding: 0 10px;
     }
-    
-    .watch_all {
-        font-family: Gilroy;
-        font-weight: 500;
-        font-style: Medium;
+    h3 {
+        font-size: 24px;
+    }
+}
+
+
+/* @media(max-width:1200px) {
+    .container {
+        padding: 0 20px;
+    }
+} */
+
+@media(max-width:880px) {
+    h1 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 30px;
+    }
+}
+
+@media(max-width:480px) {
+    h1 {
+        font-size: 22px;
+    }
+    p {
+        font-size: 12px;
+    }
+    h2 {
         font-size: 20px;
-        line-height: 100%;
-        letter-spacing: 0%;
-        border-bottom: 2px solid #E17946
+        padding-top: 20px;
     }
-    
-    @media(max-width:1300px) {
-        .container {
-            padding: 0 10px;
-        }
-        .wrapp {
-            max-width: 100%;
-            padding: 0 10px;
-        }
-        h3 {
-            font-size: 24px;
-        }
+}
+
+@media(max-width:399px) {
+    h1 {
+        font-size: 20px;
     }
-    /* @media(max-width:1200px) {
-        .container {
-            padding: 0 20px;
-        }
-    } */
-    
-    @media(max-width:880px) {
-        h1 {
-            font-size: 32px;
-        }
+    h2 {
+        font-size: 18px;
     }
-    
-    @media (max-width: 500px) {
-        h1 {
-            font-size: 30px;
-        }
+}
+
+@media (max-width: 359px) {
+    h1 {
+        font-size: 18px;
     }
-    
-    @media(max-width:480px) {
-        h1 {
-            font-size: 22px;
-        }
-        p {
-            font-size: 12px;
-        }
-        h2 {
-            font-size: 20px;
-            padding-top: 20px;
-        }
+    h2 {
+        font-size: 16px;
     }
-    
-    @media(max-width:399px) {
-        h1 {
-            font-size: 20px;
-        }
-        h2 {
-            font-size: 18px;
-        }
-    }
-    
-    @media (max-width: 359px) {
-        h1 {
-            font-size: 18px;
-        }
-        h2 {
-            font-size: 16px;
-        }
-    }
+}
